@@ -1,0 +1,51 @@
+[SIDEBAR]
+Title: Prudhvi's Notes
+
+[PAGE: ABOUT ME]
+Icon: 📍
+Heading: about me
+Content:
+Hello, I'm Prudhvi Bade. I am a technology leader and finance enthusiast. Currently, I serve as the Director of Client Technology at The Modern Data Company.
+
+My professional journey has been centered around data and strategy. I've spent over 6 years at The Modern Data Company, moving from Senior Program Manager in the CEO's office to Director roles. Previously, I worked at Google (Program Manager) and Cognizant (Business Strategy Consultant).
+
+By night, I am a passionate voice in Equity Research. I believe in the power of fundamental analysis and first-principles thinking when it comes to the markets. I write about my findings and market observations on my Substack.
+
+Core Expertise:
+- Data Architecture & Engineering: Building scalable data fabrics and GenBI products.
+- Business Strategy: Helping customers productize their data and extract value at scale.
+- Equity Research: Deep dives into company fundamentals and market themes.
+
+Originally a systems engineer at Jio and co-founder of Gharpe.in, I've always been driven by the challenge of building things from scratch and making complex systems work faster and better.
+
+[PAGE: PRINCIPLES]
+Icon: 📖
+Heading: principles
+Subheading: A collection of guides for life and engineering.
+Items:
+- First Principles Thinking: Break down complex problems into their basic elements and reassemble them from the ground up.
+- Bias for Action: Speed and iteration are often more valuable than perfect planning. Build, measure, and learn.
+- Extreme Ownership: Take full responsibility for results and team outcomes, regardless of the situation.
+- Intellectual Honesty: Be willing to admit what you don't know and change your mind when presented with new data.
+- Compound Interest: Whether in finance or learning, the greatest results come from consistent effort over a long period.
+
+[PAGE: READING LIST]
+Icon: 📚
+Heading: reading list
+Sections:
+[Section: EQUITY & INVESTING]
+- The Intelligent Investor — Benjamin Graham
+- One Up On Wall Street — Peter Lynch
+- Margin of Safety — Seth Klarman
+
+[Section: TECH & STRATEGY]
+- Zero to One — Peter Thiel
+- High Output Management — Andrew Grove
+
+[PAGE: BOOKMARKS]
+Icon: 🔖
+Heading: bookmarks
+Items:
+- "Writing is nature's way of letting you know how sloppy your thinking is." — Guindon
+- "Simplicity is the ultimate sophistication." — Leonardo da Vinci
+- "The details are not the details. They make the design." — Charles Eames
