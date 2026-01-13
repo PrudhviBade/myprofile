@@ -35,21 +35,6 @@ export default function Home() {
           <li>• studied mba at iim shillong</li>
         </ul>
 
-        <p style={{ marginBottom: '16px' }}>
-          i&apos;m also really good at equity research. i write a lot about investment opportunities
-          in indian markets on my substack.
-          i&apos;ve built several systems that help me invest in awesome companies, even when i&apos;m super busy.
-        </p>
-
-        <p style={{ marginBottom: '16px' }}>
-          beyond work/finance, i love:
-        </p>
-        <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <li>• technical analysis and charting on equities</li>
-          <li>• whiteboard sessions and drawing architectural diagrams</li>
-          <li>• test cricket and playing sports (badminton, tt, golf)</li>
-          <li>• shipping software prototypes just to boast that i know stuff ;)</li>
-        </ul>
       </section>
     </article>
   );
