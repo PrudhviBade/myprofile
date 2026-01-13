@@ -12,7 +12,7 @@ export default function HowIBuiltThis() {
 
             <section style={{ lineHeight: '1.6', fontSize: '15px', color: 'var(--text-primary)' }}>
                 <p style={{ marginBottom: '24px' }}>
-                    inspired by minimalist design systems like apple notes and curators like alana goyal,
+                    inspired by minimalist design system of apple notes,
                     but the entire engine under the hood was built from the ground up.
                 </p>
 
