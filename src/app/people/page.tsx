@@ -1,6 +1,6 @@
 export default function People() {
     const people = [
-        { name: "My Dad", description: "First mentor and lifelong influence." },
+        { name: "My Dad", description: "Great doctor, first mentor and lifelong influence." },
         { name: "Virat Kohli", description: "For the intensity and elite mindset." },
         { name: "Christopher Nolan", description: "For the complex storytelling and scale." },
         { name: "Mark Minervini", description: "Stock market wizard and master of probability." },
