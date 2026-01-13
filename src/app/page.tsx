@@ -47,7 +47,7 @@ export default function Home() {
         </p>
 
         <p style={{ marginBottom: '16px' }}>
-          this space is a working notebook. some thoughts will be polished. many won’t. all of them are honest.
+          this space is a working notebook. some thoughts will be polished. many won’t. <span style={{ textDecoration: 'underline' }}>all of them are honest.</span>
         </p>
 
       </section>
