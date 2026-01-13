@@ -13,6 +13,30 @@ export default function Passions() {
                     i&apos;ve built several systems for my investing journey that help me invest in awesome companies, even when i&apos;m super busy.
                 </p>
 
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '32px', margin: '32px 0' }}>
+                    <div style={{ background: '#f5f5f7', padding: '12px', borderRadius: '12px', border: '1px solid #e5e5e7' }}>
+                        <img
+                            src="/images/finbuddy-deliveries.png"
+                            alt="FinBuddy Deliveries"
+                            style={{ width: '100%', borderRadius: '8px', display: 'block', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}
+                        />
+                        <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '12px', textAlign: 'center' }}>
+                            finbuddy: delivery outlier tracking & volume analysis pipeline
+                        </p>
+                    </div>
+
+                    <div style={{ background: '#f5f5f7', padding: '12px', borderRadius: '12px', border: '1px solid #e5e5e7' }}>
+                        <img
+                            src="/images/finbuddy-universe.png"
+                            alt="FinBuddy Universe"
+                            style={{ width: '100%', borderRadius: '8px', display: 'block', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}
+                        />
+                        <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '12px', textAlign: 'center' }}>
+                            finbuddy: real-time universe management and fundamental oversight
+                        </p>
+                    </div>
+                </div>
+
                 <p style={{ marginBottom: '16px' }}>
                     beyond work/finance, i love:
                 </p>
