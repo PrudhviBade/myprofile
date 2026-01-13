@@ -39,9 +39,27 @@ export default function Writing() {
                     href="https://prudhvibade.substack.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ fontSize: '14px', color: '#007AFF', textDecoration: 'none', fontWeight: 500 }}
-                    onMouseOver={(e) => e.currentTarget.style.textDecoration = 'underline'}
-                    onMouseOut={(e) => e.currentTarget.style.textDecoration = 'none'}
+                    style={{
+                        fontSize: '13px',
+                        color: '#ff6719',
+                        backgroundColor: '#fff',
+                        padding: '6px 14px',
+                        borderRadius: '20px',
+                        border: '1px solid #ff6719',
+                        textDecoration: 'none',
+                        fontWeight: 600,
+                        transition: 'all 0.2s ease'
+                    }}
+                    onMouseOver={(e) => {
+                        e.currentTarget.style.backgroundColor = '#ff6719';
+                        e.currentTarget.style.color = '#fff';
+                        e.currentTarget.style.boxShadow = '0 2px 8px rgba(255,103,25,0.2)';
+                    }}
+                    onMouseOut={(e) => {
+                        e.currentTarget.style.backgroundColor = '#fff';
+                        e.currentTarget.style.color = '#ff6719';
+                        e.currentTarget.style.boxShadow = 'none';
+                    }}
                 >
                     Subscribe on Substack ↗
                 </a>

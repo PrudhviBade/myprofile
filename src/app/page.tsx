@@ -12,7 +12,7 @@ export default function Home() {
         </p>
 
         <p style={{ marginBottom: '16px' }}>
-          i’m a technology leader and finance enthusiast who enjoys operating at the intersection of deep systems and real business outcomes.i obsessively think about how data platforms, data products, and capital compound over time. my edge is translating complex technical problems into decisions that move the business needle.
+          i’m a technology leader and finance enthusiast at the intersection of deep systems and business outcomes. i obsess over how data platforms, data products, and capital compound. my edge is turning complex technical problems into decisions that move the business needle.
         </p>
 
         <p style={{ marginBottom: '16px', fontWeight: 500, textDecoration: 'underline' }}>
