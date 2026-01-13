@@ -16,6 +16,7 @@ interface NavItem {
 const PINNED: NavItem[] = [
     { label: 'about me', path: '/', icon: '📍', date: '1/13/2026', preview: "hello, i'm prudhvi bade. i bridge the gap..." },
     { label: 'expertise', path: '/expertise', icon: '🛠️', date: '1/13/2026', preview: "iceberg, kafka, spark, medallion architecture..." },
+    { label: 'writing', path: '/writing', icon: '✍️', date: '1/12/2026', preview: "shriram pistons, missiles & monsoons..." },
     { label: 'passions', path: '/passions', icon: '❤️', date: '1/13/2026', preview: "equity research, technical charting, and hobbies..." },
     { label: 'principles', path: '/principles', icon: '📖', date: '1/13/2026', preview: "logical problem solving, show up on time..." },
     { label: 'curations', path: '/curations', icon: '📚', date: '1/13/2026', preview: "why gpus dominate ai, swiggy's postgres scaling..." },
@@ -23,7 +24,6 @@ const PINNED: NavItem[] = [
 
 const RECENT: NavItem[] = [
     { label: 'favorite people', path: '/people', icon: '🫶🏼', date: '1/13/2026', preview: "dad, virat kohli, nolan, minervini..." },
-    { label: 'writing', path: '/writing', icon: '✍️', date: '1/12/2026', preview: "shriram pistons, missiles & monsoons..." },
     { label: 'how i built this', path: '/how-i-built-this', icon: '🏗️', date: '1/13/2026', preview: "next.js 15, css modules, no templates..." },
 ];
 
