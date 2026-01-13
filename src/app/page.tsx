@@ -29,12 +29,12 @@ export default function Home() {
           previously
         </p>
         <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <li>• head of enterprise data delivery at the modern data company</li>
           <li>• program manager at google (google maps & geo data operations)</li>
           <li>• business strategy consultant at cognizant business consulting</li>
           <li>• led end to end deal strategy for a $120Mn bid at kaiser</li>
           <li>• part of the team that launched india’s first mifi & 4g volte network at reliance jio</li>
-          <li>• co-founder at gharpe.in</li>
-          <li>• mba from iim shillong</li>
+          <li>• co-founder at gharpe.in & mba from iim shillong</li>
         </ul>
 
         <p style={{ marginBottom: '16px', fontWeight: 500, textDecoration: 'underline' }}>
