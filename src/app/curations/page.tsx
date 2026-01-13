@@ -26,7 +26,7 @@ export default function Curations() {
         <article>
             <header style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ fontSize: '24px' }}>📚</span>
-                <h1 style={{ fontSize: '28px', fontWeight: 700 }}>library</h1>
+                <h1 style={{ fontSize: '28px', fontWeight: 700, color: 'var(--text-primary)' }}>library</h1>
             </header>
 
             {sections.map((section, idx) => (

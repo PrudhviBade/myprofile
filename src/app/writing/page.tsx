@@ -33,7 +33,7 @@ export default function Writing() {
             <header style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '12px', justifyContent: 'space-between' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ fontSize: '24px' }}>✍️</span>
-                    <h1 style={{ fontSize: '28px', fontWeight: 700 }}>writing</h1>
+                    <h1 style={{ fontSize: '28px', fontWeight: 700, color: 'var(--text-primary)' }}>writing</h1>
                 </div>
                 <a
                     href="https://prudhvibade.substack.com/"
@@ -76,7 +76,7 @@ export default function Writing() {
                         >
                             <div style={{ fontSize: '12px', color: '#8E8E93', marginBottom: '4px' }}>{article.date}</div>
                             <h3 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '8px', color: 'var(--text-primary)' }}>{article.title}</h3>
-                            <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: '1.5' }}>{article.preview}</p>
+                            <p style={{ fontSize: '15px', color: 'var(--text-secondary)', lineHeight: '1.6' }}>{article.preview}</p>
                         </div>
                     </a>
                 ))}
