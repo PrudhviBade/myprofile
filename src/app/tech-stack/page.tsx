@@ -34,7 +34,7 @@ export default function TechStack() {
             <section style={{ marginBottom: '48px' }}>
                 {stacks.map((stack, idx) => (
                     <div key={idx} style={{ marginBottom: '20px' }}>
-                        <h3 style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--text-secondary)', letterSpacing: '0.05em', marginBottom: '8px' }}>
+                        <h3 style={{ fontSize: '13px', textTransform: 'uppercase', color: 'var(--text-secondary)', letterSpacing: '0.05em', marginBottom: '8px' }}>
                             {stack.domain}
                         </h3>
                         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
@@ -45,7 +45,7 @@ export default function TechStack() {
                                         padding: '4px 10px',
                                         backgroundColor: '#F0F0F0',
                                         borderRadius: '4px',
-                                        fontSize: '12px',
+                                        fontSize: '14px',
                                         color: '#333',
                                         fontWeight: 500
                                     }}
