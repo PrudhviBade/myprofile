@@ -16,8 +16,8 @@ interface NavItem {
 const PINNED: NavItem[] = [
     { label: 'about me', path: '/', icon: '📍', date: '1/13/2026', preview: "hello, i'm prudhvi bade. i bridge the gap..." },
     { label: 'expertise', path: '/expertise', icon: '🛠️', date: '1/13/2026', preview: "iceberg, kafka, spark, medallion architecture..." },
-    { label: 'writing', path: '/writing', icon: '✍️', date: '1/12/2026', preview: "shriram pistons, missiles & monsoons..." },
     { label: 'passions', path: '/passions', icon: '❤️', date: '1/13/2026', preview: "equity research, technical charting, and hobbies..." },
+    { label: 'writing', path: '/writing', icon: '✍️', date: '1/12/2026', preview: "shriram pistons, missiles & monsoons..." },
     { label: 'principles', path: '/principles', icon: '📖', date: '1/13/2026', preview: "logical problem solving, show up on time..." },
     { label: 'curations', path: '/curations', icon: '📚', date: '1/13/2026', preview: "why gpus dominate ai, swiggy's postgres scaling..." },
 ];
