@@ -32,7 +32,7 @@ export default function TechStack() {
         <article>
             <header style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ fontSize: '24px' }}>🛠️</span>
-                <h1 style={{ fontSize: '28px', fontWeight: 700 }}>tech stack</h1>
+                <h1 style={{ fontSize: '28px', fontWeight: 700, color: 'var(--text-primary)' }}>tech stack</h1>
             </header>
 
             <section style={{ marginBottom: '40px' }}>
