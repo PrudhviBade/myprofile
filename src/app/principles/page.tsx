@@ -31,20 +31,6 @@ export default function Principles() {
                     </li>
                 ))}
             </ul>
-
-            <header style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ fontSize: '24px' }}>🥎</span>
-                <h1 style={{ fontSize: '28px', fontWeight: 700 }}>interests</h1>
-            </header>
-
-            <ul style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '15px' }}>
-                {interests.map((item, i) => (
-                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                        <span style={{ fontSize: '12px', color: 'var(--text-secondary)' }}>•</span>
-                        {item}
-                    </li>
-                ))}
-            </ul>
         </article>
     );
 }
