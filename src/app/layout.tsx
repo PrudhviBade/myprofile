@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning>
         <div style={{ display: 'flex' }}>
           {/* Sidebar is client component, safe to import as it doesn't need data fetching yet */}
           <Sidebar />
