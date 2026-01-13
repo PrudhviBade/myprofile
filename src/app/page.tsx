@@ -8,18 +8,12 @@ export default function Home() {
 
       <section style={{ lineHeight: '1.6', fontSize: '15px', color: 'var(--text-primary)' }}>
         <p style={{ marginBottom: '16px' }}>
-          hello, i’m prudhvi bade. 
+          hello, i’m prudhvi bade. Mostly people call me Prudhvi.
         </p>
 
         <p style={{ marginBottom: '16px' }}>
-          i’m a technology leader and finance enthusiast who enjoys operating at the intersection of deep systems and real business outcomes.
+          i’m a technology leader and finance enthusiast who enjoys operating at the intersection of deep systems and real business outcomes.i obsessively think about how data platforms, data products, and capital compound over time. my edge is translating complex technical problems into decisions that move the business needle.
         </p>
-
-        <p style={{ marginBottom: '24px' }}>
-          i build and scale data platforms, lead engineering teams, and think obsessively about how data, products, and capital compound over time. my edge is translating complex technical problems into decisions that move the business needle.
-        </p>
-
-        <div style={{ margin: '32px 0', color: '#E5E5E7' }}>⸻</div>
 
         <p style={{ marginBottom: '16px', fontWeight: 500 }}>
           currently
@@ -30,8 +24,6 @@ export default function Home() {
           <li>• leading data engineering and cloud ops teams across enterprise clients</li>
           <li>• running and scaling the hyderabad office</li>
         </ul>
-
-        <div style={{ margin: '32px 0', color: '#E5E5E7' }}>⸻</div>
 
         <p style={{ marginBottom: '16px', fontWeight: 500 }}>
           previously
@@ -45,15 +37,13 @@ export default function Home() {
           <li>• mba from iim shillong</li>
         </ul>
 
-        <div style={{ margin: '32px 0', color: '#E5E5E7' }}>⸻</div>
-
         <p style={{ marginBottom: '16px', fontWeight: 500 }}>
           what drives me
         </p>
 
         <p style={{ marginBottom: '16px' }}>
           i like hard problems. ambiguous ones. the kind where technology, incentives, and people all collide.
-          i care about leverage—systems that scale, teams that grow faster than linearly, and ideas that age well.
+          i care about systems that scale, teams that grow faster than linearly, and ideas that age well.
         </p>
 
         <p style={{ marginBottom: '16px' }}>
