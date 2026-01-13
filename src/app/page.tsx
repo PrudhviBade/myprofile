@@ -15,29 +15,29 @@ export default function Home() {
           i’m a technology leader and finance enthusiast who enjoys operating at the intersection of deep systems and real business outcomes.i obsessively think about how data platforms, data products, and capital compound over time. my edge is translating complex technical problems into decisions that move the business needle.
         </p>
 
-        <p style={{ marginBottom: '16px', fontWeight: 500 }}>
+        <p style={{ marginBottom: '16px', fontWeight: 500, textDecoration: 'underline' }}>
           currently
         </p>
         <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <li>• director of data & client technology at the modern data company</li>
-          <li>• building scalable data fabrics and genbi products on dataos</li>
-          <li>• leading data engineering and cloud ops teams across enterprise clients</li>
-          <li>• running and scaling the hyderabad office</li>
+          <li>• architecting scalable data solutions and building data products on dataos</li>
+          <li>• leading data engineering, science and cloud ops teams across enterprise clients</li>
+          <li>• running and scaling the Modern Data's hyderabad office</li>
         </ul>
 
-        <p style={{ marginBottom: '16px', fontWeight: 500 }}>
+        <p style={{ marginBottom: '16px', fontWeight: 500, textDecoration: 'underline' }}>
           previously
         </p>
         <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <li>• program manager at google (google maps & geo data operations)</li>
           <li>• business strategy consultant at cognizant business consulting</li>
-          <li>• led strategy for a $120m bid at kaiser</li>
+          <li>• led end to end deal strategy for a $120m bid at kaiser</li>
           <li>• part of the team that launched india’s first mifi & 4g volte network at reliance jio</li>
           <li>• co-founder at gharpe.in</li>
           <li>• mba from iim shillong</li>
         </ul>
 
-        <p style={{ marginBottom: '16px', fontWeight: 500 }}>
+        <p style={{ marginBottom: '16px', fontWeight: 500, textDecoration: 'underline' }}>
           what drives me
         </p>
 
