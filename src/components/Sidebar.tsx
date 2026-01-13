@@ -14,19 +14,14 @@ interface NavItem {
 }
 
 const PINNED: NavItem[] = [
-    { label: 'about me', path: '/', icon: '📍', date: '1/12/2026', preview: "hello, i'm prudhvi bade. i'm a..." },
+    { label: 'about me', path: '/', icon: '📍', date: '1/13/2026', preview: "hello, i'm prudhvi bade. i bridge the gap..." },
+    { label: 'principles', path: '/principles', icon: '📖', date: '1/13/2026', preview: "logical problem solving, show up on time..." },
+    { label: 'curations', path: '/curations', icon: '📚', date: '1/13/2026', preview: "why gpus dominate ai, swiggy's postgres scaling..." },
+];
+
+const RECENT: NavItem[] = [
+    { label: 'favorite people', path: '/people', icon: '🫶🏼', date: '1/13/2026', preview: "dad, virat kohli, nolan, minervini..." },
     { label: 'writing', path: 'https://prudhvibade.substack.com/', icon: '✍️', date: '1/12/2026', preview: "equity research and market deep dives..." },
-    { label: 'principles', path: '/principles', icon: '📖', date: '1/12/2026', preview: "first principles thinking, bias for action..." },
-    { label: 'bookmarks', path: '/bookmarks', icon: '🔖', date: '1/12/2026', preview: "writing is nature's way of letting you know..." },
-];
-
-const TODAY: NavItem[] = [
-    { label: 'reading list', path: '/reading-list', icon: '📚', date: '1/12/2026', preview: "the intelligent investor, zero to one..." },
-];
-
-const PREVIOUS: NavItem[] = [
-    { label: 'favorite products', path: '/products', icon: '📦', date: '1/9/2026', preview: "a semiregularly updated collection..." },
-    { label: 'travel logs', path: '/travel', icon: '✈️', date: '1/5/2026', preview: "exploring the intersection of tech and..." },
 ];
 
 export default function Sidebar() {
@@ -34,18 +29,32 @@ export default function Sidebar() {
 
     const renderItem = (item: NavItem) => {
         const isActive = pathname === item.path;
-        return (
-            <Link key={item.path} href={item.path} className={styles.navLink}>
-                <div className={`${styles.navItem} ${isActive ? styles.active : ''}`}>
-                    <span className={styles.icon}>{item.icon}</span>
-                    <div className={styles.itemText}>
-                        <div className={styles.title}>{item.label}</div>
-                        <div className={styles.subtext}>
-                            <span className={styles.date}>{item.date}</span>
-                            <span className={styles.preview}>{item.preview}</span>
-                        </div>
+        const isExternal = item.path.startsWith('http');
+
+        const Content = (
+            <div className={`${styles.navItem} ${isActive ? styles.active : ''}`}>
+                <span className={styles.icon}>{item.icon}</span>
+                <div className={styles.itemText}>
+                    <div className={styles.title}>{item.label}</div>
+                    <div className={styles.subtext}>
+                        <span className={styles.date}>{item.date}</span>
+                        <span className={styles.preview}>{item.preview}</span>
                     </div>
                 </div>
+            </div>
+        );
+
+        if (isExternal) {
+            return (
+                <a key={item.path} href={item.path} target="_blank" rel="noopener noreferrer" className={styles.navLink}>
+                    {Content}
+                </a>
+            );
+        }
+
+        return (
+            <Link key={item.path} href={item.path} className={styles.navLink}>
+                {Content}
             </Link>
         );
     };
@@ -85,14 +94,14 @@ export default function Sidebar() {
                 <div className={styles.section}>
                     <div className={styles.sectionTitle}>Today</div>
                     <nav className={styles.navList}>
-                        {TODAY.map(renderItem)}
+                        {RECENT.slice(0, 1).map(renderItem)}
                     </nav>
                 </div>
 
                 <div className={styles.section}>
-                    <div className={styles.sectionTitle}>Previous 7 Days</div>
+                    <div className={styles.sectionTitle}>Yesterday</div>
                     <nav className={styles.navList}>
-                        {PREVIOUS.map(renderItem)}
+                        {RECENT.slice(1).map(renderItem)}
                     </nav>
                 </div>
             </div>

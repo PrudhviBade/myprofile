@@ -7,33 +7,58 @@ export default function Home() {
       </header>
 
       <section style={{ lineHeight: '1.6', fontSize: '15px' }}>
-        <p style={{ marginBottom: '16px' }}>
-          Hello, I'm <strong>Prudhvi Bade</strong>. I am a technology leader and finance enthusiast.
-          Currently, I serve as the <strong>Director of Client Technology</strong> at <strong>The Modern Data Company</strong>.
+        <p style={{ marginBottom: '24px' }}>
+          I’m <strong>Prudhvi Bade</strong>. I bridge the gap between complex data technology and strategic business outcomes—a rare blend of deep technical expertise and commercial acumen.
         </p>
 
-        <p style={{ marginBottom: '16px' }}>
-          My professional journey has been centered around data and strategy. I've spent over 6 years at The Modern Data Company,
-          moving from Senior Program Manager in the CEO's office to Director roles.
-          Previously, I worked at <strong>Google</strong> (Program Manager) and <strong>Cognizant</strong> (Business Strategy Consultant).
-        </p>
-
-        <p style={{ marginBottom: '16px' }}>
-          By night, I am a passionate voice in <strong>Equity Research</strong>. I believe in the power of fundamental analysis
-          and first-principles thinking when it comes to the markets. I write about my findings and market observations
-          on my <a href="https://prudhvibade.substack.com/" target="_blank">Substack</a>.
-        </p>
-
-        <h3 style={{ fontSize: '16px', fontWeight: 700, marginTop: '32px', marginBottom: '12px' }}>core expertise</h3>
-        <ul style={{ listStyle: 'disc', paddingLeft: '20px', marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <li><strong>Data Architecture & Engineering</strong>: Building scalable data fabrics and GenBI products.</li>
-          <li><strong>Business Strategy</strong>: Helping customers productize their data and extract value at scale.</li>
-          <li><strong>Equity Research</strong>: Deep dives into company fundamentals and market themes.</li>
+        <h3 style={{ fontSize: '12px', textTransform: 'uppercase', color: 'var(--text-secondary)', letterSpacing: '0.05em', marginBottom: '16px' }}>
+          Currently 2020 — 2026
+        </h3>
+        <ul style={{ listStyle: 'none', padding: 0, marginBottom: '32px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <li>
+            <strong>Director of Data, Client Technology @ The Modern Data Company</strong>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '14px', marginTop: '4px' }}>
+              Architecting scalable data fabrics and GenBI products using DataOS. I help customers productize their data and unlock value at scale.
+            </p>
+          </li>
+          <li>
+            <strong>Team Leadership & Operations</strong>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '14px', marginTop: '4px' }}>
+              Built and led the Data Engineering and Cloud Ops teams for 3 years. Managed Hyderabad office operations and spearheaded recruitment and marketing collateral initiatives.
+            </p>
+          </li>
         </ul>
 
+        <h3 style={{ fontSize: '12px', textTransform: 'uppercase', color: 'var(--text-secondary)', letterSpacing: '0.05em', marginBottom: '16px' }}>
+          Previously 2016 — 2020
+        </h3>
+        <ul style={{ listStyle: 'none', padding: 0, marginBottom: '32px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <li>
+            <strong>Program Manager @ Google</strong>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '14px', marginTop: '4px' }}>
+              Led Geo Data Operations for Google Maps. Developed RCNN models and drove revenue across Trust & Safety and Imagery teams.
+            </p>
+          </li>
+          <li>
+            <strong>Strategy Consultant @ Cognizant</strong>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '14px', marginTop: '4px' }}>
+              Won the Shining Star and Best Project Manager awards for managing a $120M successful bid at Kaiser.
+            </p>
+          </li>
+          <li>
+            <strong>Entrepreneurship & Early Career</strong>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '14px', marginTop: '4px' }}>
+              Launched <strong>Gharpe.in</strong> (grocery delivery) in 2015. Developed India’s first MiFi & 4G VoLTE network at <strong>Reliance Jio</strong>.
+            </p>
+          </li>
+        </ul>
+
+        <h3 style={{ fontSize: '16px', fontWeight: 700, marginTop: '40px', marginBottom: '16px' }}>More about me</h3>
         <p style={{ marginBottom: '16px' }}>
-          Originally a systems engineer at Jio and co-founder of Gharpe.in, I've always been driven by the
-          challenge of building things from scratch and making complex systems work faster and better.
+          Beyond the technical stack, I’m an avid <strong>Equity Researcher</strong>. I focus on technical analysis and fundamental research in Indian markets, building systems that provide high-conviction investment opportunities even amidst a busy professional schedule.
+        </p>
+        <p>
+          I document my findings and market observations on my <a href="https://prudhvibade.substack.com/" target="_blank" style={{ textDecoration: 'underline' }}>Substack</a>.
         </p>
       </section>
     </article>

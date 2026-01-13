@@ -1,10 +1,19 @@
 export default function Principles() {
     const principles = [
-        { title: "First Principles Thinking", text: "Break down complex problems into their basic elements and reassemble them from the ground up." },
-        { title: "Bias for Action", text: "Speed and iteration are often more valuable than perfect planning. Build, measure, and learn." },
-        { title: "Extreme Ownership", text: "Take full responsibility for results and team outcomes, regardless of the situation." },
-        { title: "Intellectual Honesty", text: "Be willing to admit what you don't know and change your mind when presented with new data." },
-        { title: "Compound Interest", text: "Whether in finance or learning, the greatest results come from consistent effort over a long period." }
+        { title: "Logical Problem Solving", text: "Break complex issues into basic truths. Avoiding randomness minimizes complexity." },
+        { title: "Urgency & Punctuality", text: "Show up on time, always. Speed acts as a forcing function for clarity." },
+        { title: "Infinite Learnability", text: "Humans are built to master any field—from data engineering to rocket science." },
+        { title: "Emotional Impact", text: "Skills and tasks are forgotten; people always remember how you made them feel." },
+        { title: "High standards", text: "Always push for a level of quality that exceeds your own expectations." }
+    ];
+
+    const interests = [
+        "Technical analysis and charting on equities",
+        "Pitch decks and elevator pitches for startups",
+        "Architectural diagrams and whiteboarding",
+        "Test Cricket (Huge fan)",
+        "Badminton, Table Tennis, and Golf",
+        "Building and shipping software prototypes"
     ];
 
     return (
@@ -14,11 +23,25 @@ export default function Principles() {
                 <h1 style={{ fontSize: '28px', fontWeight: 700 }}>principles</h1>
             </header>
 
-            <ul style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '24px', marginBottom: '48px' }}>
                 {principles.map((p, i) => (
                     <li key={i}>
                         <h3 style={{ fontSize: '16px', fontWeight: 700, marginBottom: '4px' }}>{p.title}</h3>
                         <p style={{ lineHeight: '1.6', fontSize: '15px' }}>{p.text}</p>
+                    </li>
+                ))}
+            </ul>
+
+            <header style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <span style={{ fontSize: '24px' }}>🥎</span>
+                <h1 style={{ fontSize: '28px', fontWeight: 700 }}>interests</h1>
+            </header>
+
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '15px' }}>
+                {interests.map((item, i) => (
+                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        <span style={{ fontSize: '12px', color: 'var(--text-secondary)' }}>•</span>
+                        {item}
                     </li>
                 ))}
             </ul>
