@@ -35,23 +35,32 @@ export default function TechStack() {
                 <h1 style={{ fontSize: '28px', fontWeight: 700 }}>tech stack</h1>
             </header>
 
-            <section style={{ marginBottom: '48px' }}>
+            <section style={{ marginBottom: '40px' }}>
                 {stacks.map((stack, idx) => (
-                    <div key={idx} style={{ marginBottom: '20px' }}>
-                        <h3 style={{ fontSize: '13px', textTransform: 'uppercase', color: 'var(--text-secondary)', letterSpacing: '0.05em', marginBottom: '8px' }}>
+                    <div key={idx} style={{ marginBottom: '28px' }}>
+                        <h3 style={{
+                            fontSize: '12px',
+                            textTransform: 'uppercase',
+                            color: 'var(--text-secondary)',
+                            letterSpacing: '0.06em',
+                            marginBottom: '12px',
+                            fontWeight: 600
+                        }}>
                             {stack.domain}
                         </h3>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px 8px' }}>
                             {stack.techs.map((tech, i) => (
                                 <span
                                     key={i}
                                     style={{
-                                        padding: '4px 10px',
-                                        backgroundColor: '#F0F0F0',
-                                        borderRadius: '4px',
+                                        padding: '5px 12px',
+                                        backgroundColor: '#f5f5f7',
+                                        border: '1px solid #e5e5e7',
+                                        borderRadius: '6px',
                                         fontSize: '14px',
-                                        color: '#333',
-                                        fontWeight: 500
+                                        color: '#1d1d1f',
+                                        fontWeight: 500,
+                                        display: 'inline-block'
                                     }}
                                 >
                                     {tech}
@@ -67,9 +76,9 @@ export default function TechStack() {
                 <h2 style={{ fontSize: '18px', fontWeight: 700 }}>data leadership reads</h2>
             </header>
 
-            <ul style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '15px' }}>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '14px', fontSize: '15px', padding: 0, listStyle: 'none' }}>
                 {dataReads.map((item, i) => (
-                    <li key={i}>
+                    <li key={i} style={{ lineHeight: 1.4 }}>
                         <a
                             href={item.url}
                             target="_blank"
