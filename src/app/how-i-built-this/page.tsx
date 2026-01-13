@@ -33,7 +33,7 @@ export default function HowIBuiltThis() {
                     <li>• built from scratch (no off-the-shelf templates)</li>
                     <li>• every module architected from a blank canvas</li>
                     <li>• manual refinement for narrative crispness</li>
-                    <li>• labor of precision—from hydration fixes to ux polish</li>
+                    <li>• labor of precision from hydration fixes to ux polish</li>
                 </ul>
 
             </section>
