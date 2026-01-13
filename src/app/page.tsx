@@ -31,7 +31,7 @@ export default function Home() {
         <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <li>• program manager at google (google maps & geo data operations)</li>
           <li>• business strategy consultant at cognizant business consulting</li>
-          <li>• led end to end deal strategy for a $120m bid at kaiser</li>
+          <li>• led end to end deal strategy for a $120Mn bid at kaiser</li>
           <li>• part of the team that launched india’s first mifi & 4g volte network at reliance jio</li>
           <li>• co-founder at gharpe.in</li>
           <li>• mba from iim shillong</li>
@@ -42,8 +42,7 @@ export default function Home() {
         </p>
 
         <p style={{ marginBottom: '16px' }}>
-          i like hard problems. ambiguous ones. the kind where technology, incentives, and people all collide.
-          i care about systems that scale, teams that grow faster than linearly, and ideas that age well.
+          i like hard problems and care about systems that scale, teams that grow faster than linearly, and ideas that age well.
         </p>
 
         <p style={{ marginBottom: '16px' }}>
