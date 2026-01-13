@@ -1,6 +1,10 @@
 'use client';
 
+import { useState } from 'react';
+
 export default function Passions() {
+    const [expandedImg, setExpandedImg] = useState<string | null>(null);
+
     return (
         <article>
             <header style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -25,64 +29,125 @@ export default function Passions() {
                     <li>• shipping software prototypes just to boast that i know stuff ;)</li>
                 </ul>
 
-                <div style={{ display: 'flex', flexDirection: 'row', gap: '24px', margin: '48px -60px' }}>
+                <div style={{ display: 'flex', flexDirection: 'row', gap: '24px', margin: '40px 0' }}>
+                    {/* Deliveries Image */}
                     <div
                         style={{
                             flex: 1,
                             background: '#f5f5f7',
-                            padding: '6px',
+                            padding: '10px',
                             borderRadius: '12px',
                             border: '1px solid #e5e5e7',
-                            transition: 'transform 0.2s, box-shadow 0.2s'
+                            transition: 'all 0.2s ease',
+                            cursor: 'pointer'
                         }}
                         onMouseOver={(e) => {
-                            e.currentTarget.style.transform = 'scale(1.04)';
-                            e.currentTarget.style.boxShadow = '0 12px 32px rgba(0,0,0,0.08)';
+                            e.currentTarget.style.transform = 'scale(1.02)';
+                            e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.06)';
                         }}
                         onMouseOut={(e) => {
                             e.currentTarget.style.transform = 'scale(1)';
                             e.currentTarget.style.boxShadow = 'none';
                         }}
+                        onClick={() => setExpandedImg('/images/finbuddy-deliveries.png')}
                     >
                         <img
                             src="/images/finbuddy-deliveries.png"
                             alt="FinBuddy Deliveries"
                             style={{ width: '100%', borderRadius: '8px', display: 'block' }}
                         />
-                        <p style={{ fontSize: '10px', fontWeight: 600, color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'center', opacity: 0.6, letterSpacing: '0.05em' }}>
+                        <p style={{ fontSize: '11px', fontWeight: 500, color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'center', opacity: 0.8 }}>
                             DELIVERY OUTLIER PIPELINE
                         </p>
                     </div>
 
+                    {/* Universe Image */}
                     <div
                         style={{
                             flex: 1,
                             background: '#f5f5f7',
-                            padding: '6px',
+                            padding: '10px',
                             borderRadius: '12px',
                             border: '1px solid #e5e5e7',
-                            transition: 'transform 0.2s, box-shadow 0.2s'
+                            transition: 'all 0.2s ease',
+                            cursor: 'pointer'
                         }}
                         onMouseOver={(e) => {
-                            e.currentTarget.style.transform = 'scale(1.04)';
-                            e.currentTarget.style.boxShadow = '0 12px 32px rgba(0,0,0,0.08)';
+                            e.currentTarget.style.transform = 'scale(1.02)';
+                            e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.06)';
                         }}
                         onMouseOut={(e) => {
                             e.currentTarget.style.transform = 'scale(1)';
                             e.currentTarget.style.boxShadow = 'none';
                         }}
+                        onClick={() => setExpandedImg('/images/finbuddy-universe.png')}
                     >
                         <img
                             src="/images/finbuddy-universe.png"
                             alt="FinBuddy Universe"
                             style={{ width: '100%', borderRadius: '8px', display: 'block' }}
                         />
-                        <p style={{ fontSize: '10px', fontWeight: 600, color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'center', opacity: 0.6, letterSpacing: '0.05em' }}>
+                        <p style={{ fontSize: '11px', fontWeight: 500, color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'center', opacity: 0.8 }}>
                             FUNDAMENTAL OVERSIGHT DASHBOARD
                         </p>
                     </div>
                 </div>
             </section>
+
+            {/* Image Overlay */}
+            {expandedImg && (
+                <div
+                    style={{
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                        backdropFilter: 'blur(10px)',
+                        zIndex: 2000,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        cursor: 'zoom-out',
+                        padding: '40px'
+                    }}
+                    onClick={() => setExpandedImg(null)}
+                >
+                    <div style={{ position: 'relative', maxWidth: '95%', maxHeight: '95%', boxShadow: '0 24px 64px rgba(0,0,0,0.1)' }}>
+                        <img
+                            src={expandedImg}
+                            alt="Expanded View"
+                            style={{
+                                width: '100%',
+                                height: 'auto',
+                                display: 'block',
+                                borderRadius: '12px',
+                                border: '1px solid #e5e5e7'
+                            }}
+                        />
+                        <button
+                            style={{
+                                position: 'absolute',
+                                top: '-48px',
+                                right: '0',
+                                background: 'none',
+                                border: 'none',
+                                fontSize: '24px',
+                                cursor: 'pointer',
+                                padding: '8px',
+                                opacity: 0.5
+                            }}
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setExpandedImg(null);
+                            }}
+                        >
+                            ✕
+                        </button>
+                    </div>
+                </div>
+            )}
         </article>
     );
 }
