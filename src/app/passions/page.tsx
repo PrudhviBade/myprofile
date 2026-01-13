@@ -1,3 +1,5 @@
+'use client';
+
 export default function Passions() {
     return (
         <article>
@@ -23,26 +25,60 @@ export default function Passions() {
                     <li>• shipping software prototypes just to boast that i know stuff ;)</li>
                 </ul>
 
-                <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', margin: '32px 0' }}>
-                    <div style={{ flex: 1, background: '#f5f5f7', padding: '12px', borderRadius: '12px', border: '1px solid #e5e5e7' }}>
+                <div style={{ display: 'flex', flexDirection: 'row', gap: '24px', margin: '40px 0' }}>
+                    <div
+                        style={{
+                            flex: 1,
+                            background: '#f5f5f7',
+                            padding: '10px',
+                            borderRadius: '12px',
+                            border: '1px solid #e5e5e7',
+                            transition: 'transform 0.2s, box-shadow 0.2s'
+                        }}
+                        onMouseOver={(e) => {
+                            e.currentTarget.style.transform = 'scale(1.02)';
+                            e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.06)';
+                        }}
+                        onMouseOut={(e) => {
+                            e.currentTarget.style.transform = 'scale(1)';
+                            e.currentTarget.style.boxShadow = 'none';
+                        }}
+                    >
                         <img
                             src="/images/finbuddy-deliveries.png"
                             alt="FinBuddy Deliveries"
-                            style={{ width: '100%', borderRadius: '8px', display: 'block', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}
+                            style={{ width: '100%', borderRadius: '8px', display: 'block' }}
                         />
-                        <p style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '12px', textAlign: 'center', lineHeight: '1.4' }}>
-                            finbuddy: delivery outlier tracking pipeline
+                        <p style={{ fontSize: '11px', fontWeight: 500, color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'center', opacity: 0.8 }}>
+                            DELIVERY OUTLIER PIPELINE
                         </p>
                     </div>
 
-                    <div style={{ flex: 1, background: '#f5f5f7', padding: '12px', borderRadius: '12px', border: '1px solid #e5e5e7' }}>
+                    <div
+                        style={{
+                            flex: 1,
+                            background: '#f5f5f7',
+                            padding: '10px',
+                            borderRadius: '12px',
+                            border: '1px solid #e5e5e7',
+                            transition: 'transform 0.2s, box-shadow 0.2s'
+                        }}
+                        onMouseOver={(e) => {
+                            e.currentTarget.style.transform = 'scale(1.02)';
+                            e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.06)';
+                        }}
+                        onMouseOut={(e) => {
+                            e.currentTarget.style.transform = 'scale(1)';
+                            e.currentTarget.style.boxShadow = 'none';
+                        }}
+                    >
                         <img
                             src="/images/finbuddy-universe.png"
                             alt="FinBuddy Universe"
-                            style={{ width: '100%', borderRadius: '8px', display: 'block', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}
+                            style={{ width: '100%', borderRadius: '8px', display: 'block' }}
                         />
-                        <p style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '12px', textAlign: 'center', lineHeight: '1.4' }}>
-                            finbuddy: fundamental oversight dashboard
+                        <p style={{ fontSize: '11px', fontWeight: 500, color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'center', opacity: 0.8 }}>
+                            FUNDAMENTAL OVERSIGHT DASHBOARD
                         </p>
                     </div>
                 </div>
