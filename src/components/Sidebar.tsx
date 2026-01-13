@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './Sidebar.module.css';
@@ -29,6 +29,20 @@ const RECENT: NavItem[] = [
 
 export default function Sidebar() {
     const pathname = usePathname();
+    const [searchQuery, setSearchQuery] = useState('');
+
+    const filterItems = (items: NavItem[]) => {
+        if (!searchQuery) return items;
+        const query = searchQuery.toLowerCase();
+        return items.filter(item =>
+            item.label.toLowerCase().includes(query) ||
+            (item.preview && item.preview.toLowerCase().includes(query))
+        );
+    };
+
+    const filteredPinned = filterItems(PINNED);
+    const filteredRecent = filterItems(RECENT);
+    const hasResults = filteredPinned.length > 0 || filteredRecent.length > 0;
 
     const renderItem = (item: NavItem) => {
         const isActive = pathname === item.path;
@@ -83,30 +97,39 @@ export default function Sidebar() {
                     type="text"
                     placeholder="Search"
                     className={styles.searchBar}
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
                 />
             </div>
 
             <div className={styles.content}>
-                <div className={styles.section}>
-                    <div className={styles.sectionTitle}>Pinned</div>
-                    <nav className={styles.navList}>
-                        {PINNED.map(renderItem)}
-                    </nav>
-                </div>
+                {!hasResults ? (
+                    <div style={{ padding: '24px', textAlign: 'center', fontSize: '13px', color: '#8E8E93' }}>
+                        No results found
+                    </div>
+                ) : (
+                    <>
+                        {filteredPinned.length > 0 && (
+                            <div className={styles.section}>
+                                <div className={styles.sectionTitle}>Pinned</div>
+                                <nav className={styles.navList}>
+                                    {filteredPinned.map(renderItem)}
+                                </nav>
+                            </div>
+                        )}
 
-                <div className={styles.section}>
-                    <div className={styles.sectionTitle}>Today</div>
-                    <nav className={styles.navList}>
-                        {RECENT.slice(0, 1).map(renderItem)}
-                    </nav>
-                </div>
-
-                <div className={styles.section}>
-                    <div className={styles.sectionTitle}>Yesterday</div>
-                    <nav className={styles.navList}>
-                        {RECENT.slice(1).map(renderItem)}
-                    </nav>
-                </div>
+                        {filteredRecent.length > 0 && (
+                            <div className={styles.section}>
+                                <div className={styles.sectionTitle}>
+                                    {filteredRecent.some(i => i.label === 'favorite people') ? 'Today' : 'Yesterday'}
+                                </div>
+                                <nav className={styles.navList}>
+                                    {filteredRecent.map(renderItem)}
+                                </nav>
+                            </div>
+                        )}
+                    </>
+                )}
             </div>
         </aside>
     );
