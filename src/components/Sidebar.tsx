@@ -21,7 +21,7 @@ const PINNED: NavItem[] = [
 
 const RECENT: NavItem[] = [
     { label: 'favorite people', path: '/people', icon: '🫶🏼', date: '1/13/2026', preview: "dad, virat kohli, nolan, minervini..." },
-    { label: 'writing', path: 'https://prudhvibade.substack.com/', icon: '✍️', date: '1/12/2026', preview: "equity research and market deep dives..." },
+    { label: 'writing', path: '/writing', icon: '✍️', date: '1/12/2026', preview: "shriram pistons, missiles & monsoons..." },
 ];
 
 export default function Sidebar() {

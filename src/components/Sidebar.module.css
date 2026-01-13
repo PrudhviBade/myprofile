@@ -90,6 +90,10 @@
     color: inherit;
 }
 
+.navLink:hover {
+    text-decoration: none;
+}
+
 .navItem {
     display: flex;
     padding: 10px 16px 10px 24px;
