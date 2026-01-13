@@ -13,6 +13,14 @@ export default function TechStack() {
         {
             domain: "AI & LLM Leadership",
             techs: ["RAG Architecture", "LangChain / LlamaIndex", "Vector Databases (Pinecone, Weaviate)", "Model Fine-tuning & Evaluation", "Scale-out AI Pipelines"]
+        },
+        {
+            domain: "Cloud Ops & Observability",
+            techs: ["Docker", "Kubernetes (K8s)", "Data Observability", "Cloud Infrastructure", "CI/CD Pipelines", "Monitoring & Alerting"]
+        },
+        {
+            domain: "Data Product Leadership",
+            techs: ["Next-gen Data Products", "Data Monetization", "GTM for Data Tools", "Technical Product Management", "Stakeholder Alignment"]
         }
     ];
 
