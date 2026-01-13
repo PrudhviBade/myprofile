@@ -4,19 +4,19 @@ export default function TechStack() {
     const stacks = [
         {
             domain: "Data Products & Engineering",
-            techs: ["Data Architecture", "Apache Iceberg", "Apache Kafka", "Apache Spark", "Trino", "DBT", "Medallion Architecture", "Data Products", "Data Monetization"]
+            techs: ["Data Products", "Data Architecture", "Apache Iceberg", "Kafka", "Spark", "Trino", "DBT", "Medallion Architecture", "Databricks", "Snowflake", "Streaming & Event Driven"]
         },
         {
             domain: "AI & LLM",
-            techs: ["RAG", "LangChain", "Vector Databases", "Model Fine-tuning", "SageMaker", "RCNN Models"]
+            techs: ["RAG", "LangChain", "Vector Databases", "Model Fine-tuning", "SageMaker", "RCNN Models", "LLM Inference"]
         },
         {
             domain: "Cloud Ops & Analytics",
             techs: ["Docker", "Kubernetes (K8s)", "Data Observability", "GenBI", "Tableau", "PowerBI", "CI/CD Pipelines"]
         },
         {
-            domain: "Functional & Business Leadership",
-            techs: ["MBA (IIM Shillong)", "Commercial Acumen", "Strategy & GTM", "Stakeholder Management", "Operational Excellence", "Team Building", "Budgeting & P&L"]
+            domain: "Business Leadership",
+            techs: ["Strategy & GTM", "Commercial Acumen", "Stakeholder Management", "Operational Excellence", "Team Building", "Budgeting & P&L", "Data Monetization"]
         }
     ];
 
