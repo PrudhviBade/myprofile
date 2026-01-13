@@ -3,24 +3,16 @@
 export default function TechStack() {
     const stacks = [
         {
-            domain: "Data Engineering & Infrastructure",
-            techs: ["Apache Iceberg", "Apache Kafka", "Apache Spark", "Trino", "Apache Flink", "dbt", "Medallion Architecture", "Functional Data Engineering"]
-        },
-        {
-            domain: "Analytics & BI Excellence",
-            techs: ["Tableau", "PowerBI", "Looker", "Apache Superset", "Semantic Layer Design", "Star-schema Modelling", "GenBI Solutions"]
+            domain: "Data Engineering & Products",
+            techs: ["Apache Iceberg", "Apache Kafka", "Apache Spark", "Trino", "dbt", "Medallion Architecture", "Data Products", "Data Monetization"]
         },
         {
             domain: "AI & LLM Leadership",
-            techs: ["RAG Architecture", "LangChain / LlamaIndex", "Vector Databases (Pinecone, Weaviate)", "Model Fine-tuning & Evaluation", "Scale-out AI Pipelines"]
+            techs: ["RAG", "LangChain", "Vector Databases", "Model Fine-tuning", "SageMaker", "RCNN Models"]
         },
         {
-            domain: "Cloud Ops & Observability",
-            techs: ["Docker", "Kubernetes (K8s)", "Data Observability", "Cloud Infrastructure", "CI/CD Pipelines", "Monitoring & Alerting"]
-        },
-        {
-            domain: "Data Product Leadership",
-            techs: ["Next-gen Data Products", "Data Monetization", "GTM for Data Tools", "Technical Product Management", "Stakeholder Alignment"]
+            domain: "Cloud Ops & Analytics",
+            techs: ["Docker", "Kubernetes (K8s)", "Data Observability", "GenBI", "Tableau", "PowerBI", "CI/CD Pipelines"]
         }
     ];
 
@@ -41,8 +33,8 @@ export default function TechStack() {
 
             <section style={{ marginBottom: '48px' }}>
                 {stacks.map((stack, idx) => (
-                    <div key={idx} style={{ marginBottom: '32px' }}>
-                        <h3 style={{ fontSize: '12px', textTransform: 'uppercase', color: 'var(--text-secondary)', letterSpacing: '0.05em', marginBottom: '16px' }}>
+                    <div key={idx} style={{ marginBottom: '20px' }}>
+                        <h3 style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--text-secondary)', letterSpacing: '0.05em', marginBottom: '8px' }}>
                             {stack.domain}
                         </h3>
                         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
@@ -50,10 +42,10 @@ export default function TechStack() {
                                 <span
                                     key={i}
                                     style={{
-                                        padding: '6px 12px',
+                                        padding: '4px 10px',
                                         backgroundColor: '#F0F0F0',
-                                        borderRadius: '6px',
-                                        fontSize: '13px',
+                                        borderRadius: '4px',
+                                        fontSize: '12px',
                                         color: '#333',
                                         fontWeight: 500
                                     }}
@@ -66,9 +58,9 @@ export default function TechStack() {
                 ))}
             </section>
 
-            <header style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ fontSize: '20px' }}>📖</span>
-                <h2 style={{ fontSize: '20px', fontWeight: 700 }}>data leadership reads</h2>
+            <header style={{ marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <span style={{ fontSize: '18px' }}>📖</span>
+                <h2 style={{ fontSize: '18px', fontWeight: 700 }}>data leadership reads</h2>
             </header>
 
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '15px' }}>
