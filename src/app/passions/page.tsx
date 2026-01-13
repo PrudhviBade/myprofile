@@ -25,19 +25,19 @@ export default function Passions() {
                     <li>• shipping software prototypes just to boast that i know stuff ;)</li>
                 </ul>
 
-                <div style={{ display: 'flex', flexDirection: 'row', gap: '24px', margin: '40px 0' }}>
+                <div style={{ display: 'flex', flexDirection: 'row', gap: '24px', margin: '48px -60px' }}>
                     <div
                         style={{
                             flex: 1,
                             background: '#f5f5f7',
-                            padding: '10px',
+                            padding: '6px',
                             borderRadius: '12px',
                             border: '1px solid #e5e5e7',
                             transition: 'transform 0.2s, box-shadow 0.2s'
                         }}
                         onMouseOver={(e) => {
-                            e.currentTarget.style.transform = 'scale(1.02)';
-                            e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.06)';
+                            e.currentTarget.style.transform = 'scale(1.04)';
+                            e.currentTarget.style.boxShadow = '0 12px 32px rgba(0,0,0,0.08)';
                         }}
                         onMouseOut={(e) => {
                             e.currentTarget.style.transform = 'scale(1)';
@@ -49,7 +49,7 @@ export default function Passions() {
                             alt="FinBuddy Deliveries"
                             style={{ width: '100%', borderRadius: '8px', display: 'block' }}
                         />
-                        <p style={{ fontSize: '11px', fontWeight: 500, color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'center', opacity: 0.8 }}>
+                        <p style={{ fontSize: '10px', fontWeight: 600, color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'center', opacity: 0.6, letterSpacing: '0.05em' }}>
                             DELIVERY OUTLIER PIPELINE
                         </p>
                     </div>
@@ -58,14 +58,14 @@ export default function Passions() {
                         style={{
                             flex: 1,
                             background: '#f5f5f7',
-                            padding: '10px',
+                            padding: '6px',
                             borderRadius: '12px',
                             border: '1px solid #e5e5e7',
                             transition: 'transform 0.2s, box-shadow 0.2s'
                         }}
                         onMouseOver={(e) => {
-                            e.currentTarget.style.transform = 'scale(1.02)';
-                            e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.06)';
+                            e.currentTarget.style.transform = 'scale(1.04)';
+                            e.currentTarget.style.boxShadow = '0 12px 32px rgba(0,0,0,0.08)';
                         }}
                         onMouseOut={(e) => {
                             e.currentTarget.style.transform = 'scale(1)';
@@ -77,7 +77,7 @@ export default function Passions() {
                             alt="FinBuddy Universe"
                             style={{ width: '100%', borderRadius: '8px', display: 'block' }}
                         />
-                        <p style={{ fontSize: '11px', fontWeight: 500, color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'center', opacity: 0.8 }}>
+                        <p style={{ fontSize: '10px', fontWeight: 600, color: 'var(--text-secondary)', marginTop: '8px', textAlign: 'center', opacity: 0.6, letterSpacing: '0.05em' }}>
                             FUNDAMENTAL OVERSIGHT DASHBOARD
                         </p>
                     </div>
