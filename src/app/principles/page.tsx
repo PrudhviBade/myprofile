@@ -15,7 +15,7 @@ export default function Principles() {
                         • Show up on time, always!
                     </li>
                     <li>
-                        • Infinite Learnability. Learn anything that needed from data engineering to rocket science.
+                        • Learn anything that is needed from data engineering to rocket science.
                     </li>
                     <li>
                         • Skills and tasks are forgotten; people always remember how you made them feel.
