@@ -35,9 +35,9 @@ More about me
 
 📖
 principles
-* Solve problems logically. Randomness increases the complexity.
-* Show up on time, always!
-* You can learn anything. Even how to build a rocket. Humans are built to do so.
+* solve problems logically. randomness increases the complexity.
+* show up on time, always!
+* you can learn anything. even how to build a rocket. Humans are built to do so.
 * People remember how you make them feel
 * Work harder than you think you should
 

@@ -8,7 +8,7 @@ export default function Home() {
 
       <section style={{ lineHeight: '1.6', fontSize: '15px', color: 'var(--text-primary)' }}>
         <p style={{ marginBottom: '16px' }}>
-          hello, i’m prudhvi bade. Mostly people call me Prudhvi.
+          hello, i’m prudhvi bade. mostly people call me prudhvi.
         </p>
 
         <p style={{ marginBottom: '16px' }}>
