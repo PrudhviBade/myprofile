@@ -220,3 +220,22 @@
         visibility: hidden;
     }
 }
+
+.keyboardFocused {
+    background-color: #E8E8E8;
+    /* Same as hover */
+    /* Optionally add an outline or different indication */
+    position: relative;
+}
+
+.keyboardFocused::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #007AFF;
+    /* iOS Blue or similar accent */
+    border-radius: 0 4px 4px 0;
+}

@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import styles from './Sidebar.module.css';
 
 interface NavItem {
@@ -45,13 +45,103 @@ export default function Sidebar() {
     const filteredPinned = filterItems(PINNED);
     const filteredRecent = filterItems(RECENT);
     const hasResults = filteredPinned.length > 0 || filteredRecent.length > 0;
+    const allVisibleItems = [...filteredPinned, ...filteredRecent];
 
-    const renderItem = (item: NavItem) => {
+    // Keyboard navigation state
+    const [keyboardFocusIndex, setKeyboardFocusIndex] = useState<number>(-1);
+    const router = useRouter();
+
+    // Reset focus when search changes
+    useEffect(() => {
+        setKeyboardFocusIndex(-1);
+    }, [searchQuery]);
+
+    // Handle keyboard navigation
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            // Only handle navigation if we have visible items
+            if (allVisibleItems.length === 0) return;
+
+            // If user is typing in search, we might want to allow ArrowDown to move to results
+            // But generally we should be careful not to hijack standard cursor movement if the input is focused
+            // For this requirements: "global as long as no other input has focus" is usually best,
+            // but the user plan said "if search bar has focus, ArrowDown will move focus to first item".
+
+            // Let's check active element
+            const activeElement = document.activeElement;
+            const isSearchFocused = activeElement?.tagName === 'INPUT';
+
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                const nextIndex = (keyboardFocusIndex === -1) ? 0 : (keyboardFocusIndex + 1) % allVisibleItems.length;
+                setKeyboardFocusIndex(nextIndex);
+
+                // Auto-navigate
+                const item = allVisibleItems[nextIndex];
+                if (!item.path.startsWith('http')) {
+                    router.push(item.path);
+                }
+
+                // If search was focused, blur it so future creates feel "in the list"
+                if (isSearchFocused && activeElement instanceof HTMLElement) {
+                    activeElement.blur();
+                }
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                const nextIndex = (keyboardFocusIndex === -1)
+                    ? allVisibleItems.length - 1
+                    : (keyboardFocusIndex - 1 + allVisibleItems.length) % allVisibleItems.length;
+                setKeyboardFocusIndex(nextIndex);
+
+                // Auto-navigate
+                const item = allVisibleItems[nextIndex];
+                if (!item.path.startsWith('http')) {
+                    router.push(item.path);
+                }
+            } else if (e.key === 'Enter') {
+                if (keyboardFocusIndex !== -1) {
+                    e.preventDefault();
+                    const item = allVisibleItems[keyboardFocusIndex];
+                    if (item.path.startsWith('http')) {
+                        window.open(item.path, '_blank', 'noopener,noreferrer');
+                    } else {
+                        // Already navigated via arrow keys, but safe to push again or just close mobile menu
+                        router.push(item.path);
+                    }
+                    setIsMobileOpen(false);
+                }
+            } else if (e.key === 'Escape') {
+                setKeyboardFocusIndex(-1);
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [allVisibleItems, keyboardFocusIndex, router]);
+
+    const renderItem = (item: NavItem, index: number) => {
         const isActive = pathname === item.path;
         const isExternal = item.path.startsWith('http');
 
+        // Calculate global index for this item
+        // We need to know if it's in filteredPinned or filteredRecent to get correct global index?
+        // Actually, renderItem needs to know its global index to compare with keyboardFocusIndex.
+        // It's easier if we map over the sections and keep track of the index offset, 
+        // OR we can just find the index in allVisibleItems, but duplicate items might exist? 
+        // The items seem unique by path/label.
+
+        // Let's pass the global index from the caller instead of trying to find it here.
+        // But the map in the JSX below receives (item, localIndex).
+        // We'll fix the call sites to pass the correct index.
+
+        // Wait, I can't easily change the map callback signature in the JSX without changing the JSX itself.
+        // Let's use `allVisibleItems.indexOf(item)` assuming object reference equality or just modify the calling loops.
+        // Actually references are preserved from PINNED/RECENT constants so indexOf works.
+        const globalIndex = allVisibleItems.indexOf(item);
+        const isFocused = globalIndex === keyboardFocusIndex;
+
         const Content = (
-            <div className={`${styles.navItem} ${isActive ? styles.active : ''}`}>
+            <div className={`${styles.navItem} ${isActive ? styles.active : ''} ${isFocused ? styles.keyboardFocused : ''}`}>
                 <span className={styles.icon}>{item.icon}</span>
                 <div className={styles.itemText}>
                     <div className={styles.title}>{item.label}</div>
