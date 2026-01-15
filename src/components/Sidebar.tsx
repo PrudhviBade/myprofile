@@ -30,6 +30,7 @@ const RECENT: NavItem[] = [
 export default function Sidebar() {
     const pathname = usePathname();
     const [searchQuery, setSearchQuery] = useState('');
+    const [isMobileOpen, setIsMobileOpen] = useState(false);
 
     const filterItems = (items: NavItem[]) => {
         if (!searchQuery) return items;
@@ -63,74 +64,112 @@ export default function Sidebar() {
 
         if (isExternal) {
             return (
-                <a key={item.path} href={item.path} target="_blank" rel="noopener noreferrer" className={styles.navLink}>
+                <a
+                    key={item.path}
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.navLink}
+                    onClick={() => setIsMobileOpen(false)}
+                >
                     {Content}
                 </a>
             );
         }
 
         return (
-            <Link key={item.path} href={item.path} className={styles.navLink}>
+            <Link
+                key={item.path}
+                href={item.path}
+                className={styles.navLink}
+                onClick={() => setIsMobileOpen(false)}
+            >
                 {Content}
             </Link>
         );
     };
 
     return (
-        <aside className={styles.sidebar}>
-            <div className={styles.header}>
-                <div className={styles.windowControls}>
-                    <div className={`${styles.dot} ${styles.red}`}></div>
-                    <div className={`${styles.dot} ${styles.yellow}`}></div>
-                    <div className={`${styles.dot} ${styles.green}`}></div>
-                </div>
-                <div className={styles.editIcon}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                    </svg>
-                </div>
-            </div>
+        <>
+            {/* Mobile Hamburger Button */}
+            <button
+                className={styles.hamburger}
+                onClick={() => setIsMobileOpen(true)}
+                aria-label="Open Menu"
+            >
+                ☰
+            </button>
 
-            <div className={styles.searchWrapper}>
-                <input
-                    type="text"
-                    placeholder="Search"
-                    className={styles.searchBar}
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
+            {/* Mobile Overlay */}
+            {isMobileOpen && (
+                <div
+                    className={styles.overlay}
+                    onClick={() => setIsMobileOpen(false)}
                 />
-            </div>
+            )}
 
-            <div className={styles.content}>
-                {!hasResults ? (
-                    <div style={{ padding: '24px', textAlign: 'center', fontSize: '13px', color: '#8E8E93' }}>
-                        No results found
+            <aside className={`${styles.sidebar} ${isMobileOpen ? styles.mobileOpen : ''}`}>
+                <div className={styles.header}>
+                    <div className={styles.windowControls}>
+                        <div className={`${styles.dot} ${styles.red}`}></div>
+                        <div className={`${styles.dot} ${styles.yellow}`}></div>
+                        <div className={`${styles.dot} ${styles.green}`}></div>
                     </div>
-                ) : (
-                    <>
-                        {filteredPinned.length > 0 && (
-                            <div className={styles.section}>
-                                <div className={styles.sectionTitle}>Pinned</div>
-                                <nav className={styles.navList}>
-                                    {filteredPinned.map(renderItem)}
-                                </nav>
-                            </div>
-                        )}
+                    {/* Close button for mobile */}
+                    <div
+                        className={styles.closeBtn}
+                        onClick={() => setIsMobileOpen(false)}
+                    >
+                        ✕
+                    </div>
+                    <div className={styles.editIcon}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                    </div>
+                </div>
 
-                        {filteredRecent.length > 0 && (
-                            <div className={styles.section}>
-                                <div className={styles.sectionTitle}>
-                                    {filteredRecent.some(i => i.label === 'favorite people') ? 'Today' : 'Yesterday'}
+                <div className={styles.searchWrapper}>
+                    <input
+                        type="text"
+                        placeholder="Search"
+                        className={styles.searchBar}
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                    />
+                </div>
+
+                <div className={styles.content}>
+                    {!hasResults ? (
+                        <div style={{ padding: '24px', textAlign: 'center', fontSize: '13px', color: '#8E8E93' }}>
+                            No results found
+                        </div>
+                    ) : (
+                        <>
+                            {filteredPinned.length > 0 && (
+                                <div className={styles.section}>
+                                    <div className={styles.sectionTitle}>Pinned</div>
+                                    <nav className={styles.navList}>
+                                        {filteredPinned.map(renderItem)}
+                                    </nav>
                                 </div>
-                                <nav className={styles.navList}>
-                                    {filteredRecent.map(renderItem)}
-                                </nav>
-                            </div>
-                        )}
-                    </>
-                )}
-            </div>
-        </aside>
+                            )}
+
+                            {filteredRecent.length > 0 && (
+                                <div className={styles.section}>
+                                    <div className={styles.sectionTitle}>
+                                        {filteredRecent.some(i => i.label === 'favorite people') ? 'Today' : 'Yesterday'}
+                                    </div>
+                                    <nav className={styles.navList}>
+                                        {filteredRecent.map(renderItem)}
+                                    </nav>
+                                </div>
+                            )}
+                        </>
+                    )}
+                </div>
+            </aside>
+        </>
     );
 }

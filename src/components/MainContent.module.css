@@ -1,0 +1,36 @@
+.main {
+    margin-left: 280px;
+    padding: 24px 64px;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    position: relative;
+    transition: margin-left 0.3s ease, padding 0.3s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+}
+
+.timestamp {
+    font-size: 11px;
+    color: #8E8E93;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .main {
+        margin-left: 0;
+        padding: 24px 20px;
+        padding-top: 60px;
+        /* Space for hamburger menu */
+    }
+}
