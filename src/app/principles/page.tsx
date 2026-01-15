@@ -9,19 +9,19 @@ export default function Principles() {
             <section style={{ lineHeight: '1.6', fontSize: '15px', color: 'var(--text-primary)' }}>
                 <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
                     <li>
-                        • Logical Problem Solving. Avoiding randomness minimizes complexity.
+                        • logical problem solving. avoiding randomness minimizes complexity.
                     </li>
                     <li>
-                        • Show up on time, always!
+                        • show up on time, always!
                     </li>
                     <li>
-                        • Learn anything that is needed from data engineering to rocket science.
+                        • learn anything that is needed from data engineering to rocket science.
                     </li>
                     <li>
-                        • Skills and tasks are forgotten; people always remember how you made them feel.
+                        • skills and tasks are forgotten; people always remember how you made them feel.
                     </li>
                     <li>
-                        • Always push for a level of quality that exceeds your own expectations.
+                        • always push for a level of quality that exceeds your own expectations.
                     </li>
                 </ul>
             </section>
