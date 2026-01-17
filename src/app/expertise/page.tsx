@@ -4,7 +4,7 @@ export default function TechStack() {
     const stacks = [
         {
             domain: "Data Products & Engineering",
-            techs: ["Data Products", "Data Architecture", "Apache Iceberg", "Kafka", "Spark", "Trino", "DBT", "Medallion Architecture", "Databricks", "Snowflake", "Streaming & Event Driven"]
+            techs: ["Data Products", "Data Architecture", "Data Governance","Apache Iceberg", "Kafka", "Spark", "Trino", "DBT", "MDM", "Medallion", "Databricks", "Snowflake", "Streaming & Event data", "GDPR & SOC2"]
         },
         {
             domain: "AI & LLM",
