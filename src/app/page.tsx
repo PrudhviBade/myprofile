@@ -8,11 +8,15 @@ export default function Home() {
 
       <section style={{ lineHeight: '1.6', fontSize: '15px', color: 'var(--text-primary)' }}>
         <p style={{ marginBottom: '16px' }}>
-          hello, i’m prudhvi bade. mostly people call me prudhvi.
+          hello, i’m prudhvi bade. most people call me prudhvi.
         </p>
 
         <p style={{ marginBottom: '16px' }}>
-          i’m a technology leader and finance enthusiast at the intersection of deep systems and business outcomes. i obsess over how data platforms, data products, and capital compound. my edge is turning complex technical problems into decisions that move the business needle.
+          i’m a director-level data leader responsible for designing and delivering large-scale, production-grade data platforms. i build and lead high-performance data teams while remaining directly involved in architecture and code, hands-on.
+        </p>
+
+        <p style={{ marginBottom: '16px' }}>
+          beyond my core role, i build equity research and investing frameworks rooted in compounding and capital allocation. my edge is turning complex technical problems into decisions that move the business needle. i hold a b.tech. and an mba from iim shillong.
         </p>
 
         <p style={{ marginBottom: '16px', fontWeight: 500, textDecoration: 'underline' }}>
@@ -22,7 +26,7 @@ export default function Home() {
           <li>• director of data & client technology at the modern data company</li>
           <li>• architecting scalable data solutions and building data products on dataos</li>
           <li>• leading data engineering, science and cloud ops teams across enterprise clients</li>
-          <li>• running and scaling the Modern Data's hyderabad office</li>
+          <li>• running and scaling the modern data's hyderabad office</li>
         </ul>
 
         <p style={{ marginBottom: '16px', fontWeight: 500, textDecoration: 'underline' }}>
@@ -34,7 +38,7 @@ export default function Home() {
           <li>• business strategy consultant at cognizant business consulting</li>
           <li>• led end to end deal strategy for a $120Mn bid at kaiser</li>
           <li>• part of the team that launched india’s first mifi & 4g volte network at reliance jio</li>
-          <li>• co-founder at gharpe.in & mba from iim shillong</li>
+          <li>• co-founder at gharpe.in</li>
         </ul>
 
         <p style={{ marginBottom: '16px', fontWeight: 500, textDecoration: 'underline' }}>
@@ -42,7 +46,7 @@ export default function Home() {
         </p>
 
         <p style={{ marginBottom: '16px' }}>
-          i like hard problems and care about systems that scale, teams that grow faster than linearly, and ideas that age well.
+          i like hard problems and care about systems that scale, teams that grow faster than linearly, and ideas that age well. 
         </p>
 
         <p style={{ marginBottom: '16px' }}>
