@@ -30,6 +30,15 @@ export default function Passions() {
                     <li>• shipping software prototypes just to boast that i know stuff ;)</li>
                 </ul>
 
+                <section className={styles.showcaseSection}>
+                    <a href="https://finbuddy.cloud/" target="_blank" className={styles.showcaseLink}>
+                        access finbuddy.cloud here
+                    </a>
+                    <span className={styles.showcaseNote}>
+                        (🔒 zero data captured • fully encrypted)
+                    </span>
+                </section>
+
                 <div className={styles.imageGrid}>
                     {/* Deliveries Image */}
                     <div
