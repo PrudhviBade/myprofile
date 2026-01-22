@@ -14,7 +14,7 @@ export default function HowIOperate() {
         <article>
             <header style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ fontSize: '24px' }}>⚙️</span>
-                <h1 style={{ fontSize: '28px', fontWeight: 700, color: 'var(--text-primary)' }}>everything about me that my cv won’t tell you</h1>
+                <h1 style={{ fontSize: '28px', fontWeight: 700, color: 'var(--text-primary)' }}>what my cv won’t tell you</h1>
             </header>
 
             <div style={{ marginBottom: '32px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e5e5e7', maxWidth: '500px' }}>
