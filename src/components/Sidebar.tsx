@@ -17,7 +17,7 @@ const PINNED: NavItem[] = [
     { label: 'about me', path: '/', icon: '📍', date: '1/13/2026', preview: "hello, i'm prudhvi bade. i bridge the gap..." },
     { label: 'expertise', path: '/expertise', icon: '🛠️', date: '1/13/2026', preview: "iceberg, kafka, spark, medallion architecture..." },
     { label: 'passions', path: '/passions', icon: '❤️', date: '1/13/2026', preview: "equity research, technical charting, and hobbies..." },
-    { label: 'writing', path: '/writing', icon: '✍️', date: '1/12/2026', preview: "shriram pistons, missiles & monsoons..." },
+    { label: 'writing', path: '/writing', icon: '✍️', date: '1/12/2026', preview: "silver rally, shriram pistons, missiles & monsoons..." },
     { label: 'first principles', path: '/principles', icon: '📖', date: '1/13/2026', preview: "logical problem solving, show up on time..." },
     { label: 'my edge', path: '/how-i-operate', icon: '⚙️', date: '1/22/2026', preview: "mba stereotype, technical depth, and team building..." },
     { label: 'curations', path: '/curations', icon: '📚', date: '1/13/2026', preview: "why gpus dominate ai, swiggy's postgres scaling..." },
