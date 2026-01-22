@@ -3,6 +3,12 @@
 export default function Writing() {
     const articles = [
         {
+            title: "The Great Silver Rally",
+            date: "January 2026",
+            preview: "Gold and silver are often spoken about together. They rise together, fall together, and are routinely described as twin metals. That comparison sounds neat, but it breaks down very quickly once you look at how these two metals are actually used.",
+            url: "https://prudhvibade.substack.com/p/the-great-silver-rally"
+        },
+        {
             title: "Shriram Pistons: Riding the 2W–CV Upcycle",
             date: "January 2026",
             preview: "Exploring the technical and fundamental tailwinds for one of India's leading piston manufacturers as the automotive sector enters a strong recovery phase.",
@@ -19,12 +25,6 @@ export default function Writing() {
             date: "November 2025",
             preview: "Investigating the disconnect between the rapidly growing aging population in India and the actual infrastructure/business models currently available in the senior care space.",
             url: "https://prudhvibade.substack.com/p/indias-senior-care-mirage"
-        },
-        {
-            title: "Room for Growth - Beyond Tariffs",
-            date: "October 2025",
-            preview: "Analyzing the structural changes in the hospitality and travel sectors that are driving growth far beyond simple room rate increases.",
-            url: "https://prudhvibade.substack.com/p/room-for-growth-beyond-tariffs"
         }
     ];
 
