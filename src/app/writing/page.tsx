@@ -33,7 +33,7 @@ export default function Writing() {
             <header style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '12px', justifyContent: 'space-between' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ fontSize: '24px' }}>✍️</span>
-                    <h1 style={{ fontSize: '28px', fontWeight: 700, color: 'var(--text-primary)' }}>writing</h1>
+                    <h1 style={{ fontSize: '28px', fontWeight: 700, color: 'var(--text-primary)' }}>writings</h1>
                 </div>
                 <a
                     href="https://prudhvibade.substack.com/"
