@@ -3,7 +3,7 @@ export default function Principles() {
         <article>
             <header style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ fontSize: '24px' }}>📖</span>
-                <h1 style={{ fontSize: '28px', fontWeight: 700, color: 'var(--text-primary)' }}>principles</h1>
+                <h1 style={{ fontSize: '28px', fontWeight: 700, color: 'var(--text-primary)' }}>how i think</h1>
             </header>
 
             <section style={{ lineHeight: '1.6', fontSize: '15px', color: 'var(--text-primary)' }}>
