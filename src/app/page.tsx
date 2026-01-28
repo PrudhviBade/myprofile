@@ -33,7 +33,7 @@ export default function Home() {
           previously
         </p>
         <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <li>• head of enterprise data delivery at the modern data company</li>
+          <li>• head of enterprise data delivery and led customer success at the modern data company</li>
           <li>• program manager at google (google maps & geo data operations)</li>
           <li>• business strategy consultant at cognizant business consulting</li>
           <li>• led end to end deal strategy for a $120Mn bid at kaiser</li>
