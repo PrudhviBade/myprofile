@@ -12,7 +12,7 @@ export default function Home() {
         </p>
 
         <p style={{ marginBottom: '16px' }}>
-          i’m a director-level data leader responsible for designing and delivering large-scale, production-grade data platforms. i build and lead high-performance data teams while remaining directly involved in architecture and code, hands-on.
+          i’m a director-level data leader responsible for designing and delivering large-scale, production-grade data platforms. I build and lead high-performance data teams while staying hands-on in architecture and code.
         </p>
 
         <p style={{ marginBottom: '16px' }}>
@@ -23,7 +23,7 @@ export default function Home() {
           currently
         </p>
         <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <li>• director of data & client technology at the modern data company</li>
+          <li>• director of data of data engineering and architecture at the modern data company</li>
           <li>• architecting scalable data solutions and building data products on dataos</li>
           <li>• leading data engineering, science and cloud ops teams across enterprise clients</li>
           <li>• running and scaling the modern data's hyderabad office</li>
