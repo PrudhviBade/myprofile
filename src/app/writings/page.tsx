@@ -5,6 +5,12 @@ import Link from 'next/link';
 export default function Writing() {
     const substackArticles = [
         {
+            title: "The Gold Price Volatility Paradox",
+            date: "February 2026",
+            preview: "How Jewellers Still Win When Prices Crush Buyers",
+            url: "https://prudhvibade.substack.com/p/the-gold-price-volatility-paradox"
+        },
+        {
             title: "The Great Silver Rally",
             date: "January 2026",
             preview: "Gold and silver are often spoken about together. They rise together, fall together, and are routinely described as twin metals.",
@@ -21,12 +27,6 @@ export default function Writing() {
             date: "December 2025",
             preview: "A deep dive into how geopolitical tensions and weather patterns are impacting corporate margins.",
             url: "https://prudhvibade.substack.com/p/margins-missiles-and-monsoons"
-        },
-        {
-            title: "India’s Senior Care Mirage",
-            date: "November 2025",
-            preview: "Investigating the disconnect between the rapidly growing aging population and actual infrastructure.",
-            url: "https://prudhvibade.substack.com/p/indias-senior-care-mirage"
         }
     ];
 
