@@ -12,21 +12,21 @@ export default function Home() {
         </p>
 
         <p style={{ marginBottom: '16px' }}>
-          i’m a director-level data leader responsible for designing and delivering large-scale, production-grade data platforms. I build and lead high-performance data teams while staying hands-on in architecture and code.
+          i’m a director-level data leader specializing in large-scale data platforms. I build and lead high-performance teams across data engineering and ML systems while staying hands-on in architecture and code.
         </p>
 
         <p style={{ marginBottom: '16px' }}>
-          beyond my core role, i build equity research and investing frameworks rooted in compounding and capital allocation. my edge is turning complex technical problems into decisions that move the business needle. i hold a b.tech. and an mba from iim shillong.
+          beyond my core role, i build AI-driven equity research and investing frameworks. my edge is translating complex technical challenges into decisions that move the business needle. i hold a b.tech. and an mba from iim shillong.
         </p>
 
         <p style={{ marginBottom: '16px', fontWeight: 500, textDecoration: 'underline' }}>
           currently
         </p>
         <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <li>• director of data of data engineering and architecture at the modern data company</li>
+          <li>• director of data engineering and architecture at the modern data company</li>
           <li>• architecting scalable data solutions and building data products on dataos</li>
           <li>• leading data engineering, science and cloud ops teams across enterprise clients</li>
-          <li>• running and scaling the modern data's hyderabad office</li>
+          <li>• implementing production-grade Generative AI and LLM solutions for enterprise clients</li>
         </ul>
 
         <p style={{ marginBottom: '16px', fontWeight: 500, textDecoration: 'underline' }}>
@@ -46,7 +46,7 @@ export default function Home() {
         </p>
 
         <p style={{ marginBottom: '16px' }}>
-          i like hard problems and care about systems that scale, teams that grow faster than linearly, and ideas that age well. 
+          i like hard problems and care about systems that scale, teams that grow faster than linearly, and ideas that age well.
         </p>
 
         <p style={{ marginBottom: '16px' }}>
