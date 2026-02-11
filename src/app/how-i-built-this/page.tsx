@@ -38,9 +38,6 @@ export default function HowIBuiltThis() {
 
             </section>
 
-            <footer style={{ marginTop: '48px', paddingTop: '24px', borderTop: '1px solid #e5e5e7', fontSize: '14px', color: 'var(--text-secondary)' }}>
-                built with precision as a data leader&apos;s digital workspace.
-            </footer>
         </article>
     );
 }
