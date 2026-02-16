@@ -31,7 +31,7 @@ export default function HowIBuiltThis() {
                 </p>
                 <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                     <li>• built from scratch (no off-the-shelf templates)</li>
-                    <li>• every module architected from a blank canvas</li>
+                    <li>• every module is architected from a blank canvas</li>
                     <li>• manual refinement for narrative crispness</li>
                     <li>• labor of precision from hydration fixes to ux polish</li>
                 </ul>
