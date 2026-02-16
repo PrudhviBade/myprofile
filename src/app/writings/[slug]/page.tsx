@@ -9,7 +9,8 @@ const slugMap: { [key: string]: string } = {
     'backfill-not-a-problem-anymore': 'Backfill - Not a problem anymore.md',
     'multi-granularity-analytics-at-scale': 'Multi Granularity Analytics at Scale.md',
     'n-plus-1-query-problem': 'N+1 query problem.md',
-    'the-small-file-problem': 'The small file problem.md'
+    'the-small-file-problem': 'The small file problem.md',
+    'data-management-platform': 'What Makes a Data Management Platform Special.md'
 };
 
 export async function generateStaticParams() {

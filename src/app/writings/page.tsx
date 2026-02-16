@@ -44,6 +44,12 @@ export default function Writing() {
             slug: "multi-granularity-analytics-at-scale"
         },
         {
+            title: "What Makes a Data Management Platform Special",
+            date: "November 2025",
+            preview: "Beyond the \"AI-native\" marketing: the four pillars that actually define a modern data platform.",
+            slug: "data-management-platform"
+        },
+        {
             title: "The N+1 Query Problem",
             date: "November 2025",
             preview: "A painful lesson from building FinBuddy: how one simple feature turned into a database optimization masterclass.",
