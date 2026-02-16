@@ -157,7 +157,7 @@ export default function Writing() {
                 <section>
                     <div style={{ height: '32px', display: 'flex', alignItems: 'center', marginBottom: '24px' }}>
                         <h2 style={{ fontSize: '14px', fontWeight: 600, textTransform: 'uppercase', color: 'var(--text-primary)', letterSpacing: '0.05em', margin: 0 }}>
-                            DataTalks Archive
+                            DataTalks
                         </h2>
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
