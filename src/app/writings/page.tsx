@@ -1,8 +1,20 @@
 'use client';
 
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 export default function Writing() {
+    const [isDesktop, setIsDesktop] = useState(true);
+
+    useEffect(() => {
+        const checkWidth = () => {
+            setIsDesktop(window.innerWidth > 1100);
+        };
+        checkWidth();
+        window.addEventListener('resize', checkWidth);
+        return () => window.removeEventListener('resize', checkWidth);
+    }, []);
+
     const substackArticles = [
         {
             title: "The Gold Price Volatility Paradox",
@@ -60,11 +72,29 @@ export default function Writing() {
             date: "October 2025",
             preview: "Why your data pipeline is choking and how compaction can save your system from metadata hell.",
             slug: "the-small-file-problem"
+        },
+        {
+            title: "Data Products: What, Why, and How",
+            date: "October 2025",
+            preview: "A data product is not just a dataset or a pipeline; it's a deployable, manageable, and trustworthy unit.",
+            slug: "data-products-what-why-and-how"
+        },
+        {
+            title: "Productize your data platform with AI",
+            date: "January 2026",
+            preview: "AI is not just improving data platforms. It is reshaping what these platforms can do, who can use them, and how quickly they deliver value.",
+            slug: "ai-productized-data-platform"
+        },
+        {
+            title: "The Future of Data Engineering",
+            date: "February 2026",
+            preview: "Predicting the shift from pipeline-centric to product-centric data architectures in the next decade.",
+            slug: "the-future-of-data-engineering"
         }
     ];
 
     return (
-        <article style={{ maxWidth: '1000px', margin: '0 auto' }}>
+        <article style={{ maxWidth: '1200px', margin: '0 auto' }}>
             <header style={{ marginBottom: '40px', display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ fontSize: '24px' }}>✍️</span>
                 <h1 style={{ fontSize: '28px', fontWeight: 700, color: 'var(--text-primary)' }}>writings</h1>
@@ -72,7 +102,7 @@ export default function Writing() {
 
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                gridTemplateColumns: isDesktop ? '1fr 2fr' : '1fr',
                 gap: '40px',
                 alignItems: 'start'
             }}>
@@ -160,7 +190,11 @@ export default function Writing() {
                             DataTalks
                         </h2>
                     </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: isDesktop ? 'repeat(2, 1fr)' : '1fr',
+                        gap: '24px'
+                    }}>
                         {dataTalksArticles.map((article, i) => (
                             <Link
                                 key={i}
