@@ -44,10 +44,22 @@ export default function Writing() {
 
     const dataTalksArticles = [
         {
+            title: "The Future of Data Engineering",
+            date: "February 2026",
+            preview: "Predicting the shift from pipeline-centric to product-centric data architectures in the next decade.",
+            slug: "the-future-of-data-engineering"
+        },
+        {
             title: "Backfilling Made Easy",
             date: "January 2026",
             preview: "How SQLMesh saved our campaign analytics from the nightmare of manual backfilling and broken pipelines.",
             slug: "backfill-not-a-problem-anymore"
+        },
+        {
+            title: "Productize your data platform with AI",
+            date: "January 2026",
+            preview: "AI is not just improving data platforms. It is reshaping what these platforms can do, who can use them, and how quickly they deliver value.",
+            slug: "ai-productized-data-platform"
         },
         {
             title: "Hidden Partitioning in Iceberg",
@@ -78,18 +90,6 @@ export default function Writing() {
             date: "October 2025",
             preview: "A data product is not just a dataset or a pipeline; it's a deployable, manageable, and trustworthy unit.",
             slug: "data-products-what-why-and-how"
-        },
-        {
-            title: "Productize your data platform with AI",
-            date: "January 2026",
-            preview: "AI is not just improving data platforms. It is reshaping what these platforms can do, who can use them, and how quickly they deliver value.",
-            slug: "ai-productized-data-platform"
-        },
-        {
-            title: "The Future of Data Engineering",
-            date: "February 2026",
-            preview: "Predicting the shift from pipeline-centric to product-centric data architectures in the next decade.",
-            slug: "the-future-of-data-engineering"
         }
     ];
 
