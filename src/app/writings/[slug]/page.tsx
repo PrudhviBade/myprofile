@@ -10,7 +10,10 @@ const slugMap: { [key: string]: string } = {
     'multi-granularity-analytics-at-scale': 'Multi Granularity Analytics at Scale.md',
     'n-plus-1-query-problem': 'N+1 query problem.md',
     'the-small-file-problem': 'The small file problem.md',
-    'data-management-platform': 'What Makes a Data Management Platform Special.md'
+    'data-management-platform': 'What Makes a Data Management Platform Special.md',
+    'data-products-what-why-and-how': 'Data Products What Why and How.md',
+    'the-future-of-data-engineering': 'The Future of Data Engineering.md',
+    'ai-productized-data-platform': "AI Didn't Just Upgrade Your Data Platform. It Productized It.md"
 };
 
 export async function generateStaticParams() {
@@ -54,9 +57,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                         remarkPlugins={[remarkGfm]}
                         components={{
                             h1: ({ node, ...props }) => <h1 style={{ fontSize: '32px', fontWeight: 800, marginBottom: '24px', color: 'var(--text-primary)' }} {...props} />,
-                            h2: ({ node, ...props }) => <h2 style={{ fontSize: '24px', fontWeight: 700, marginTop: '32px', marginBottom: '16px', color: 'var(--text-primary)' }} {...props} />,
-                            h3: ({ node, ...props }) => <h3 style={{ fontSize: '20px', fontWeight: 600, marginTop: '24px', marginBottom: '12px', color: 'var(--text-primary)' }} {...props} />,
-                            p: ({ node, ...props }) => <p style={{ marginBottom: '16px', fontSize: '16px' }} {...props} />,
+                            h2: ({ node, ...props }) => <h2 style={{ fontSize: '24px', fontWeight: 700, marginTop: '24px', marginBottom: '16px', color: 'var(--text-primary)' }} {...props} />,
+                            h3: ({ node, ...props }) => <h3 style={{ fontSize: '20px', fontWeight: 600, marginTop: '20px', marginBottom: '12px', color: 'var(--text-primary)' }} {...props} />,
+                            p: ({ node, ...props }) => <p style={{ marginBottom: '12px', fontSize: '16px' }} {...props} />,
                             ul: ({ node, ...props }) => <ul style={{ marginBottom: '16px', paddingLeft: '20px', listStyleType: 'disc' }} {...props} />,
                             li: ({ node, ...props }) => <li style={{ marginBottom: '8px' }} {...props} />,
                             code: ({ node, ...props }) => (
@@ -91,6 +94,18 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                                         color: '#666',
                                         fontStyle: 'italic',
                                         margin: '24px 0'
+                                    }}
+                                    {...props}
+                                />
+                            ),
+                            img: ({ node, ...props }) => (
+                                <img
+                                    style={{
+                                        maxWidth: '100%',
+                                        height: 'auto',
+                                        borderRadius: '8px',
+                                        margin: '16px 0 8px 0',
+                                        display: 'block'
                                     }}
                                     {...props}
                                 />

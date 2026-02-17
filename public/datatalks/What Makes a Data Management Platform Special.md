@@ -6,6 +6,7 @@ I've been evaluating data management platforms for a while now, and I keep comin
 
 Let's get into it.
 
+![DMP Pillars](/datatalks/DMP_Pillars.png)
 ## Pillar 1: Data Governance
 
 Governance is the foundation. Everything else sits on top of it.
