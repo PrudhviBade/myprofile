@@ -17,16 +17,16 @@ export default function Writing() {
 
     const substackArticles = [
         {
-            title: "The Gold Price Volatility Paradox",
+            title: "The Cloud Stock Nobody Is Talking About",
             date: "February 2026",
-            preview: "How Jewellers Still Win When Prices Crush Buyers",
-            url: "https://prudhvibade.substack.com/p/the-gold-price-volatility-paradox"
+            preview: "AWS and Azure trade at 45x earnings. DigitalOcean trades at 23x. Same industry, very different story.",
+            url: "https://prudhvibade.substack.com/p/the-cloud-stock-nobody-is-talking"
         },
         {
-            title: "The Great Silver Rally",
-            date: "January 2026",
-            preview: "Gold and silver are often spoken about together. They rise together, fall together, and are routinely described as twin metals.",
-            url: "https://prudhvibade.substack.com/p/the-great-silver-rally"
+            title: "The Gold Price Volatility Paradox",
+            date: "February 2026",
+            preview: "How Jewellers Thrive Even as Gold Prices Surge Beyond Buyers’ Reach",
+            url: "https://prudhvibade.substack.com/p/the-gold-price-volatility-paradox"
         },
         {
             title: "Shriram Pistons",
