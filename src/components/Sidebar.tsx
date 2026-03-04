@@ -20,12 +20,12 @@ const PINNED: NavItem[] = [
     { label: 'passions', path: '/passions', icon: '❤️', date: '1/13/2026', preview: "equity research, technical charting, and hobbies..." },
     { label: 'first principles', path: '/principles', icon: '📖', date: '1/13/2026', preview: "logical problem solving, show up on time..." },
     { label: 'my edge', path: '/how-i-operate', icon: '⚙️', date: '1/22/2026', preview: "mba stereotype, technical depth, and team building..." },
-    { label: 'curations', path: '/curations', icon: '📚', date: '1/13/2026', preview: "why gpus dominate ai, swiggy's postgres scaling..." },
     { label: 'get in touch', path: '/contact', icon: '📬', date: '1/15/2026', preview: "reach out via mobile, email or linkedin..." },
 ];
 
 const RECENT: NavItem[] = [
     { label: 'favorite people', path: '/people', icon: '🫶🏼', date: '1/13/2026', preview: "dad, virat kohli, nolan, minervini..." },
+    { label: 'curations', path: '/curations', icon: '📚', date: '1/13/2026', preview: "why gpus dominate ai, swiggy's postgres scaling..." },
     { label: 'how i built this', path: '/how-i-built-this', icon: '🏗️', date: '1/13/2026', preview: "next.js 15, css modules, no templates..." },
 ];
 
