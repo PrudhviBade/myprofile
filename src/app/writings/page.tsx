@@ -109,7 +109,7 @@ export default function Writing() {
                 {/* Substack Section */}
                 <section>
                     <div style={{ height: '32px', display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
-                        <h2 style={{ fontSize: '14px', fontWeight: 600, textTransform: 'uppercase', color: 'var(--text-primary)', letterSpacing: '0.05em', margin: 0 }}>
+                        <h2 style={{ fontSize: '14px', fontWeight: 600, textTransform: 'uppercase', color: 'var(--text-primary)', letterSpacing: '0.05em', margin: 0, textDecoration: 'underline' }}>
                             Substack Articles
                         </h2>
                         <a
@@ -186,8 +186,8 @@ export default function Writing() {
                 {/* DataTalks Section */}
                 <section>
                     <div style={{ height: '32px', display: 'flex', alignItems: 'center', marginBottom: '24px' }}>
-                        <h2 style={{ fontSize: '14px', fontWeight: 600, textTransform: 'uppercase', color: 'var(--text-primary)', letterSpacing: '0.05em', margin: 0 }}>
-                            DataTalks
+                        <h2 style={{ fontSize: '14px', fontWeight: 600, textTransform: 'uppercase', color: 'var(--text-primary)', letterSpacing: '0.05em', margin: 0, textDecoration: 'underline' }}>
+                            DATAtalks
                         </h2>
                     </div>
                     <div style={{
