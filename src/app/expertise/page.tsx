@@ -4,11 +4,11 @@ export default function TechStack() {
     const stacks = [
         {
             domain: "Data Products & Engineering",
-            techs: ["Data Products", "Data Architecture", "Data Governance","Apache Iceberg", "Kafka", "Spark", "Trino", "DBT", "MDM", "Medallion", "Databricks", "Snowflake", "Streaming & Event data", "GDPR & SOC2"]
+            techs: ["Data Products", "Data Architecture", "Data Governance", "Apache Iceberg", "Kafka", "Spark", "Trino", "DBT", "MDM", "Medallion", "Databricks", "Snowflake", "Streaming & Event data", "GDPR & SOC2"]
         },
         {
             domain: "AI & LLM",
-            techs: ["RAG", "LangChain", "Vector Databases", "Model Fine-tuning", "SageMaker", "RCNN Models", "LLM Inference"]
+            techs: ["RAG implementations", "Vector Databases", "Model Fine-tuning", "SageMaker", "RCNN Models", "LLM Inference"]
         },
         {
             domain: "Cloud Ops & Analytics",
