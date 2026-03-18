@@ -8,7 +8,7 @@ export default function TechStack() {
         },
         {
             domain: "AI & LLM",
-            techs: ["RAG Implementations", "Vector Databases", "Feature Engineering", "Knowledge Graph", "Model Training", "SageMaker", "RCNN Models", "LLM Inference"]
+            techs: ["RAG Implementations", "Vector and Graph Databases", "Feature Engineering", "Context Graphs", "Model Training", "SageMaker", "RCNN Models", "LLM Inference"]
         },
         {
             domain: "Cloud Ops & Analytics",
