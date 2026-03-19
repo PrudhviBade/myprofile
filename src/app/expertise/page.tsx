@@ -7,7 +7,7 @@ export default function TechStack() {
             techs: ["Data Products", "Data Architecture", "Data Governance", "Apache Iceberg", "Kafka", "Spark", "Trino", "DBT", "MDM", "Medallion", "Databricks", "Snowflake", "Streaming & Event data", "GDPR & SOC2"]
         },
         {
-            domain: "AI & LLM",
+            domain: "AI Enablement & LLM",
             techs: ["RAG Implementations", "Vector and Graph Databases", "Feature Engineering", "Context Graphs", "Model Training", "SageMaker", "RCNN Models", "LLM Inference"]
         },
         {
