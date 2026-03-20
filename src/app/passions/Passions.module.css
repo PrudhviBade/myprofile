@@ -33,7 +33,6 @@
 .imageGrid {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     gap: 24px;
     margin: 40px 0;
 }
@@ -46,6 +45,8 @@
     border: 1px solid #e5e5e7;
     transition: all 0.2s ease;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .imageCard:hover {
@@ -55,6 +56,9 @@
 
 .image {
     width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    object-position: top center;
     border-radius: 8px;
     display: block;
 }
@@ -63,7 +67,9 @@
     font-size: 11px;
     font-weight: 500;
     color: var(--text-secondary);
-    margin-top: 8px;
+    margin-top: auto;
+    padding-top: 12px;
+    padding-bottom: 4px;
     text-align: center;
     opacity: 0.8;
 }
