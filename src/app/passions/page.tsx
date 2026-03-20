@@ -58,10 +58,10 @@ export default function Passions() {
                     {/* Universe Image */}
                     <div
                         className={styles.imageCard}
-                        onClick={() => setExpandedImg('/images/finbuddy-universe.png')}
+                        onClick={() => setExpandedImg('/images/finbuddy new screen.png')}
                     >
                         <img
-                            src="/images/finbuddy-universe.png"
+                            src="/images/finbuddy new screen.png"
                             alt="FinBuddy Universe"
                             className={styles.image}
                         />
