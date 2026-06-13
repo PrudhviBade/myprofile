@@ -12,7 +12,7 @@ export default function Home() {
         </p>
 
         <p style={{ marginBottom: '16px' }}>
-          i’m a director-level data leader specializing in large-scale data platforms. I build and lead high-performance teams across data engineering and ML systems while staying hands-on in architecture and code.
+          i’m a director-level <span style={{ textDecoration: 'underline' }}>data and AI leader</span> specializing in large-scale data platforms. I build and lead high-performance teams across data engineering and ML systems while staying hands-on in architecture and code.
         </p>
 
         <p style={{ marginBottom: '16px' }}>
@@ -23,20 +23,19 @@ export default function Home() {
           currently
         </p>
         <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <li>• director of data engineering and architecture at the modern data company</li>
-          <li>• architecting scalable data solutions and building data products on dataos</li>
-          <li>• leading data engineering, science and cloud ops teams across enterprise clients</li>
-          <li>• implementing production-grade Generative AI and LLM solutions for enterprise clients</li>
+          <li>• senior director (data and ai enablement) in gartner’s analyst team, focusing on data agents, data management, and data architecture</li>
+          <li>• pioneering research and translating complex system design entities into strategic insights that guide the next wave of ai, data products and data architecture</li>
         </ul>
 
         <p style={{ marginBottom: '16px', fontWeight: 500, textDecoration: 'underline' }}>
           previously
         </p>
         <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <li>• director of data engineering and architecture at the modern data company, leading data engineering, science, and cloud ops teams to architect scalable solutions and build data products on dataos</li>
+          <li>• implemented production-grade generative ai and llm solutions for enterprise clients</li>
           <li>• head of enterprise data delivery and led customer success at the modern data company</li>
           <li>• program manager at google (google maps & geo data operations)</li>
-          <li>• business strategy consultant at cognizant business consulting</li>
-          <li>• led end to end deal strategy for a $120Mn bid at kaiser</li>
+          <li>• business strategy consultant at cognizant business consulting, leading end-to-end deal strategy for a $120Mn bid at kaiser</li>
           <li>• part of the team that launched india’s first mifi & 4g volte network at reliance jio</li>
           <li>• co-founder at gharpe.in</li>
         </ul>

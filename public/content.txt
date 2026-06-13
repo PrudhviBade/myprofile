@@ -5,15 +5,15 @@ Title: Prudhvi's Notes
 Icon: 📍
 Heading: about me
 Content:
-Hello, I'm Prudhvi Bade. I am a technology leader and finance enthusiast. Currently, I serve as the Director of Client Technology at The Modern Data Company.
+Hello, I'm Prudhvi Bade. I am a technology leader and finance enthusiast. Currently, I serve as a Senior Director (Data and AI Enablement) in Gartner's analyst team.
 
-My professional journey has been centered around data and strategy. I've spent over 6 years at The Modern Data Company, moving from Senior Program Manager in the CEO's office to Director roles. Previously, I worked at Google (Program Manager) and Cognizant (Business Strategy Consultant).
+My professional journey has been centered around data, architecture, and strategy. Previously, I spent over 6 years at The Modern Data Company, moving from Senior Program Manager in the CEO's office to Director roles including Director of Data Engineering and Architecture. Previously, I worked at Google (Program Manager) and Cognizant (Business Strategy Consultant, leading end-to-end deal strategy for Kaiser).
 
 By night, I am a passionate voice in Equity Research. I believe in the power of fundamental analysis and first-principles thinking when it comes to the markets. I write about my findings and market observations on my Substack.
 
 Core Expertise:
-- Data Architecture & Engineering: Building scalable data fabrics and GenBI products.
-- Business Strategy: Helping customers productize their data and extract value at scale.
+- Data Management & AI Enablement: Advising organizations on AI strategy, data agents, and modern data practices.
+- Data Architecture & Engineering: Scalable data fabrics, platform engineering, and AI systems.
 - Equity Research: Deep dives into company fundamentals and market themes.
 
 Originally a systems engineer at Jio and co-founder of Gharpe.in, I've always been driven by the challenge of building things from scratch and making complex systems work faster and better.

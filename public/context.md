@@ -2,23 +2,22 @@
 About me
 I’m Prudhvi Bade, and everyone calls me Prudhvi. I’m one of those rare people with solid business acumen and deep hands-on tech expertise.
 
-Currently 2020-2026
-* Working as Director of Data in the Client Technology team at The Modern Data Company.
-* As part of my role, I’m involved in a variety of tasks, including:
-    * Data Platform Management: I use DataOS (Modern’s flagship data platform) to create top-notch data products.
-    * Data Architecture & Engineering: I’m building scalable data fabrics and GenBI products.
-    * Business Strategy: I’m helping customers turn their data into products and unlock value on a large scale.
-* Built, led, and driven the entire Data Engineering and Cloud Ops teams for a solid 3 years.
-* I’ve also had the opportunity to set up and manage the Hyderabad Office operations for Modern.
-* led the entire recruitment team for Modern for a short while.
-* Created a lot of sales collateral as part of the marketing team.
+Currently
+* Working as Senior Director (Data and AI Enablement) in Gartner's analyst team, focusing on data agents, data management, and data architecture.
+* Pioneering research and translating complex system design entities into strategic insights that guide the next wave of AI, data products and data architecture.
 
-Previously 2016-2020
+Previously
+* Director of Data Engineering and Architecture at The Modern Data Company (2020-2026).
+    * Led data engineering, science, and cloud ops teams to architect scalable solutions and build data products on DataOS.
+    * Set up and managed the Hyderabad Office operations for Modern.
+    * Led the entire recruitment team for Modern for a short while.
+    * Created sales collateral as part of the marketing team.
+
+
 * Joined Google as a Program Manager in 2018 and was responsible for Geo Data Operations for the Maps division.
 * Also worked in content moderation, Trust & Safety, and Imagery teams.
 * Developed a bunch of RCNN Models and drove revenue for Google Maps.
-* Was a Strategy consultant at Cognizant Business Consulting.
-* Won the Shining Star award and the best project manager award for managing a $120Mn successful bid at Kaiser.
+* Was a Strategy consultant at Cognizant Business Consulting, winning the Shining Star award and the best project manager award for leading the end-to-end deal strategy for a successful $120Mn bid at Kaiser.
 * Launched Gharpe.in, an online grocery delivery platform, in 2015.
 * Launched India’s first MiFi & 4g VoLTE network during my stay at Reliance Jio
 * Studied MBA at one of India’s top B-Schools, IIM Shillong.
