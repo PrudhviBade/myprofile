@@ -16,7 +16,7 @@ interface NavItem {
 const PINNED: NavItem[] = [
     { label: 'about me', path: '/', icon: '📍', date: '1/13/2026', preview: "hello, i'm prudhvi bade. i bridge the gap..." },
     { label: 'expertise', path: '/expertise', icon: '🛠️', date: '1/13/2026', preview: "iceberg, kafka, spark, medallion architecture..." },
-    { label: 'writings', path: '/writings', icon: '✍️', date: '1/12/2026', preview: "silver rally, shriram pistons, missiles & monsoons..." },
+    { label: 'writings', path: '/writings', icon: '✍️', date: '6/24/2026', preview: "boring product, exciting EV bet, cloud stock..." },
     { label: 'passions', path: '/passions', icon: '❤️', date: '1/13/2026', preview: "equity research, technical charting, and hobbies..." },
     { label: 'first principles', path: '/principles', icon: '📖', date: '1/13/2026', preview: "logical problem solving, show up on time..." },
     { label: 'my edge', path: '/how-i-operate', icon: '⚙️', date: '1/22/2026', preview: "mba stereotype, technical depth, and team building..." },
@@ -25,7 +25,7 @@ const PINNED: NavItem[] = [
 
 const RECENT: NavItem[] = [
     { label: 'favorite people', path: '/people', icon: '🫶🏼', date: '1/13/2026', preview: "dad, virat kohli, nolan, minervini..." },
-    { label: 'curations', path: '/curations', icon: '📚', date: '1/13/2026', preview: "why gpus dominate ai, swiggy's postgres scaling..." },
+    { label: 'curations', path: '/curations', icon: '📚', date: '7/7/2026', preview: "why AI tokens are so expensive, why gpus dominate..." },
     { label: 'how i built this', path: '/how-i-built-this', icon: '🏗️', date: '1/13/2026', preview: "next.js 15, css modules, no templates..." },
 ];
 
