@@ -5,6 +5,7 @@ export default function Curations() {
         {
             title: "Intriguing Videos",
             items: [
+                { label: "Why AI Tokens are so Expensive - Computerphile", url: "https://www.youtube.com/watch?v=-0HRzXk8vlk" },
                 { label: "Is AI a commodity?", url: "https://www.youtube.com/watch?v=I4jbVyOqZgA" },
                 { label: "Energy requirements for AI models", url: "https://youtu.be/AN7c5S9k5L0?si=idpQpJq6PrCpk1Lk" },
                 { label: "How popcorn buckets arrived in Movie Theatres", url: "https://www.youtube.com/watch?v=a9GX1pVEHJw" },
