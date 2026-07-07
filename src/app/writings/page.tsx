@@ -17,6 +17,18 @@ export default function Writing() {
 
     const substackArticles = [
         {
+            title: "A boring Product but an exciting Business",
+            date: "June 2026",
+            preview: "The Tariff Test Is (almost) Over. The Opportunity Remains.",
+            url: "https://prudhvibade.substack.com/p/a-boring-product-but-an-exciting"
+        },
+        {
+            title: "India’s Most Exciting EV Bet, Where the Moat Is Not the Motor",
+            date: "May 2026",
+            preview: "Trust has been built. Scale comes next. Profits should follow.",
+            url: "https://prudhvibade.substack.com/p/indias-most-exciting-ev-bet-where"
+        },
+        {
             title: "The Cloud Stock Nobody Is Talking About",
             date: "February 2026",
             preview: "AWS and Azure trade at 45x earnings. DigitalOcean trades at 23x. Same industry, very different story.",
@@ -27,18 +39,6 @@ export default function Writing() {
             date: "February 2026",
             preview: "How Jewellers Thrive Even as Gold Prices Surge Beyond Buyers’ Reach",
             url: "https://prudhvibade.substack.com/p/the-gold-price-volatility-paradox"
-        },
-        {
-            title: "Shriram Pistons",
-            date: "January 2026",
-            preview: "Exploring the technical and fundamental tailwinds for one of India's leading piston manufacturers.",
-            url: "https://prudhvibade.substack.com/p/shriram-pistons-riding-the-2wcv-upcycle"
-        },
-        {
-            title: "Margins, Missiles & Monsoons",
-            date: "December 2025",
-            preview: "A deep dive into how geopolitical tensions and weather patterns are impacting corporate margins.",
-            url: "https://prudhvibade.substack.com/p/margins-missiles-and-monsoons"
         }
     ];
 
