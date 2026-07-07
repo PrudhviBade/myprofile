@@ -66,7 +66,7 @@ My Reads
 
 Intriguing Videos
 
-* Why AI Tokens are so Expensive - Computerphile — https://www.youtube.com/watch?v=-0HRzXk8vlk
+* Why AI Tokens are so Expensive — https://www.youtube.com/watch?v=-0HRzXk8vlk
 * Is AI a commodity ? — https://www.youtube.com/watch?v=I4jbVyOqZgA
 * How much energy is required to train a AI model ? — https://youtu.be/AN7c5S9k5L0?si=idpQpJq6PrCpk1Lk
 * How popcorn buckets arrived in Movie Theatres? — https://www.youtube.com/watch?v=a9GX1pVEHJw
