@@ -69,6 +69,21 @@ export default function Passions() {
                             FUNDAMENTAL OVERSIGHT DASHBOARD
                         </p>
                     </div>
+
+                    {/* Entry Finder Image */}
+                    <div
+                        className={styles.imageCard}
+                        onClick={() => setExpandedImg('/images/finbuddy-entry-finder.png')}
+                    >
+                        <img
+                            src="/images/finbuddy-entry-finder.png"
+                            alt="FinBuddy Entry Finder"
+                            className={styles.image}
+                        />
+                        <p className={styles.caption}>
+                            ENTRY FINDER DASHBOARD
+                        </p>
+                    </div>
                 </div>
             </section>
 
