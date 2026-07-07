@@ -62,7 +62,7 @@ export default function Passions() {
                     >
                         <img
                             src="/images/finbuddy-new-screen.png"
-                            alt="FinBuddy Universe"
+                            alt="FinBuddy Fundamental Oversight Dashboard"
                             className={styles.image}
                         />
                         <p className={styles.caption}>
