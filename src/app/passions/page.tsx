@@ -40,21 +40,6 @@ export default function Passions() {
                 </section>
 
                 <div className={styles.imageGrid}>
-                    {/* Deliveries Image */}
-                    <div
-                        className={styles.imageCard}
-                        onClick={() => setExpandedImg('/images/finbuddy-deliveries.png')}
-                    >
-                        <img
-                            src="/images/finbuddy-deliveries.png"
-                            alt="FinBuddy Deliveries"
-                            className={styles.image}
-                        />
-                        <p className={styles.caption}>
-                            DELIVERY OUTLIER PIPELINE
-                        </p>
-                    </div>
-
                     {/* Universe Image */}
                     <div
                         className={styles.imageCard}
@@ -82,6 +67,21 @@ export default function Passions() {
                         />
                         <p className={styles.caption}>
                             ENTRY FINDER DASHBOARD
+                        </p>
+                    </div>
+
+                    {/* Deliveries Image */}
+                    <div
+                        className={styles.imageCard}
+                        onClick={() => setExpandedImg('/images/finbuddy-deliveries.png')}
+                    >
+                        <img
+                            src="/images/finbuddy-deliveries.png"
+                            alt="FinBuddy Deliveries"
+                            className={styles.image}
+                        />
+                        <p className={styles.caption}>
+                            DELIVERY OUTLIER PIPELINE
                         </p>
                     </div>
                 </div>
