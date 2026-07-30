@@ -3,7 +3,7 @@ About me
 I’m Prudhvi Bade, and everyone calls me Prudhvi. I’m one of those rare people with solid business acumen and deep hands-on tech expertise.
 
 Currently
-* Working as Senior Director (Data and AI Enablement) in Gartner's analyst team, focusing on data agents, data management, and data architecture.
+* Working as Senior Director (Data and AI Enablement) in Gartner's analyst team, focusing on agentic data management, data observability, and data architecture.
 * Pioneering research and translating complex system design entities into strategic insights that guide the next wave of AI, data products and data architecture.
 
 Previously

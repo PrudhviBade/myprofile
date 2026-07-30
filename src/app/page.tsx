@@ -23,7 +23,7 @@ export default function Home() {
           currently
         </p>
         <ul style={{ listStyle: 'none', padding: 0, marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <li>• senior director (data and ai enablement) in gartner’s analyst team, focusing on data agents, data management, and data architecture</li>
+          <li>• senior director (data and ai enablement) in gartner’s analyst team, focusing on agentic data management, data observability, and data architecture</li>
           <li>• pioneering research and translating complex system design entities into strategic insights that guide the next wave of ai, data products and data architecture</li>
         </ul>
 

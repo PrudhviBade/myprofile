@@ -12,7 +12,7 @@ My professional journey has been centered around data, architecture, and strateg
 By night, I am a passionate voice in Equity Research. I believe in the power of fundamental analysis and first-principles thinking when it comes to the markets. I write about my findings and market observations on my Substack.
 
 Core Expertise:
-- Data Management & AI Enablement: Advising organizations on AI strategy, data agents, and modern data practices.
+- Data Management & AI Enablement: Advising organizations on AI strategy, agentic data management, data observability, and modern data practices.
 - Data Architecture & Engineering: Scalable data fabrics, platform engineering, and AI systems.
 - Equity Research: Deep dives into company fundamentals and market themes.
 
